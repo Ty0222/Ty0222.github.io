@@ -1,0 +1,163 @@
+
+
+html {
+	background: #FFF;
+}
+
+#infiniti_bg {
+	background: #D4CDC0;
+	-webkit-filter: blur(100px);
+	-webkit-transform: translate3d(0, 0, 0);
+	height: 120%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+#wun_bg {
+	background: #1B4F7F;
+	-webkit-filter: blur(100px);
+	-webkit-transform: translate3d(0, 0, 0);
+	height: 110%;
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+}
+
+.work_container {
+	max-width: 925px;
+	width: 100%;
+	margin: 0 auto 40px;
+	overflow: hidden;
+}
+
+#work_preview_text_infiniti  {
+	position: absolute;
+	z-index: 1;
+	margin: 375px 0 0 193px;
+	text-align: center;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 50px;
+	color: #CCCCCC;
+}
+
+#work_preview_text_wun  {
+	position: absolute;
+	z-index: 1;
+	margin: 375px 0 0 20px;
+	text-align: center;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 50px;
+	color: #CCCCCC;
+}
+
+.work_preview {
+	margin: 120px auto 0;
+	max-width: 925px;
+	width: 100%;
+}
+
+.work_preview_blurred {
+	display: none;	
+	margin: 120px auto 0;
+	max-width: 925px;
+	width: 100%;
+}
+
+a:hover #work_preview_text_infiniti  {
+	color: #FFF;
+}
+
+a:hover #work_preview_text_wun  {
+	color: #FFF;
+}
+
+a:hover .work_preview_blurred {
+	display: block;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+  	-o-filter: blur(2px);
+  	-ms-filter: blur(2px);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+a:hover .work_preview {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#site_header_name {
+		margin-left: -200px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+
+	#work_preview_text_infiniti  {
+		margin-top: 43%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		font-size: 40px;
+	}
+
+	#work_preview_text_wun  {
+		margin-top: 43%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	#infiniti_bg {
+		height: 100%;
+	}
+
+	#wun_bg {
+		height: 90%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#infiniti_bg {
+		height: 75%;
+	}
+
+	#wun_bg {
+		height: 75%;
+	}
+
+	#work_preview_text_infiniti {
+		margin-top: 47%;
+		font-size: 25px;
+	}
+
+	#work_preview_text_wun {
+		margin-top: 47%;
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	#infiniti_bg {
+		height: 70%;
+	}
+
+	#wun_bg {
+		height: 70%;
+	}
+
+	#work_preview_text_infiniti {
+		margin-top: 57%;
+	}
+
+	#work_preview_text_wun {
+		margin-top: 57%;
+	}
+}

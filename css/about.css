@@ -1,0 +1,352 @@
+
+
+html {
+	background: #FFF;
+}
+
+body {
+	background: url(../images/about_page_bg.jpg);
+	max-height: 8000px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#mypath_title_container {
+	max-width: 1067px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#mypath_title {
+	max-width: 1067px;
+	width: 100%;
+	margin: 80px auto;
+}
+
+#mypath_content_container {
+	max-width: 1067px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#left {
+	float: left;
+}
+
+#more_info_text {
+	margin-bottom: 50px;
+	color: #FFF;
+	font-size: 14px;
+}
+
+#right {
+	float: none;
+}
+
+li {
+	position: absolute;
+	max-width: 150px;
+	width: 100%;
+	color: #000;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#l1 {
+	margin: 117px 0 0 88px;
+}
+
+#l2 {
+	max-width: 130px;
+	margin: 385px 0 0 102px;
+	font-size: 15px;
+}
+
+#l3 {
+	margin: 945px 0 0 88px;
+}
+
+
+#l4 {
+	margin: 1300px 0 0 88px;
+}
+
+#l5 {
+	margin: 1690px 0 0 88px;
+}
+
+#l6 {
+	margin: 2075px 0 0 88px;
+}
+
+#l7 {
+	margin: 335px 0 0 844px;
+}
+
+#l8 {
+	max-width: 130px;
+	margin: 635px 0 0 854px;
+	font-size: 15px;
+}
+
+#l9 {
+	margin: 965px 0 0 844px;
+}
+
+#l10 {
+	margin: 1355px 0 0 844px;
+}
+
+#l11 {
+	margin: 1685px 0 0 844px;
+}
+
+#l12 {
+	margin: 2075px 0 0 844px;
+}
+
+#mypath_content {
+	max-width: 1067px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#mobile_mypath_content {
+	max-width: 250px;
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+}
+
+#workflow_container {
+	max-width: 1068px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#workflow_title {
+	max-width: 1068px;
+	width: 100%;
+	margin: 140px auto 0;
+}
+
+.workflow_header {
+	margin: 135px auto 0;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.workflow_content {
+	max-width: 1000px;
+	width: 100%;
+	margin: 45px auto 30px;
+	color: #FFF;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#l1 {
+		margin: 110px 0 0 82px;
+  }
+
+	#l2 {
+		margin: 370px 0 0 95px;
+	}
+
+	#l3 {
+		margin: 905px 0 0 82px;
+	}
+
+	#l4 {
+		margin: 1250px 0 0 82px;
+	}
+
+	#l5 {
+		margin: 1620px 0 0 82px;
+	}
+
+	#l6 {
+		margin: 1991px 0 0 82px;
+	}
+
+	#l7 {
+		margin: 320px 0 0 805px;
+	}
+
+	#l8 {
+		margin: 610px 0 0 817px;
+	}
+
+	#l9 {
+		margin: 920px 0 0 805px;
+	}
+
+	#l10 {
+		margin: 1295px 0 0 805px;
+	}
+
+	#l11 {
+		margin: 1615px 0 0 805px;
+	}
+
+	#l12 {
+		margin: 1991px 0 0 805px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	li {
+		font-size: 15px;
+		max-width: 130px;
+	}
+
+	#l1 {
+		margin: 85px 0 0 53px;
+	}
+
+	#l2 {
+		margin: 275px 0 0 70px;
+		font-size: 12px;
+		max-width: 100px;
+	}
+
+	#l3 {
+		margin: 680px 0 0 53px;
+	}
+
+
+	#l4 {
+		margin: 935px 0 0 53px;
+	}
+
+	#l5 {
+		margin: 1220px 0 0 53px;
+	}
+
+	#l6 {
+		margin: 1500px 0 0 53px;
+	}
+
+	#l7 {
+		margin: 250px 0 0 595px;
+	}
+
+	#l8 {
+		margin: 455px 0 0 612px;
+		font-size: 12px;
+		max-width: 100px;
+	}
+
+	#l9 {
+		margin: 695px 0 0 595px;
+	}
+
+	#l10 {
+		margin: 970px 0 0 595px;
+	}
+
+	#l11 {
+		margin: 1224px 0 0 595px;
+	}
+
+	#l12 {
+		margin: 1494px 0 0 595px;
+	}	
+}
+
+@media only screen and (max-width: 600px) {
+
+	#mypath_content_container {
+		max-width: 250px;
+	}
+
+	#more_info_text {
+		margin-left: 30px;
+	}
+
+	#right {
+		float: left;
+	}
+
+	#mypath_content {
+		display: none;
+	}
+
+	#mobile_mypath_content {
+		display: block;
+	}
+
+	#l1 {
+		margin: 100px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l2 {
+		margin: 330px 0 0 75px;
+		font-size: 16px;
+		max-width: 100px;
+	}
+
+	#l3 {
+		margin: 1390px 0 0 60px;
+		font-size: 18px;
+	}
+
+
+	#l4 {
+		margin: 1690px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l5 {
+		margin: 2635px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l6 {
+		margin: 2950px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l7 {
+		margin: 570px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l8 {
+		margin: 825px 0 0 75px;
+		font-size: 16px;
+	}
+
+	#l9 {
+		margin: 1090px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l10 {
+		margin: 2045px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l11 {
+		margin: 2315px 0 0 60px;
+		font-size: 18px;
+	}
+
+	#l12 {
+		margin: 3255px 0 0 60px;
+		font-size: 18px;
+	}
+
+	.workflow_content {
+		max-width: 580px;
+	}
+}

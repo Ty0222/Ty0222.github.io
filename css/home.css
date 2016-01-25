@@ -1,0 +1,237 @@
+
+
+html {
+    background: #FFF;
+}
+
+body {
+    background: url(../images/billboard_bg.jpg);
+    height: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+#billboard_photo_frame {
+    float: left;
+    margin: 110px 0 0 128px;
+    max-width: 461px;
+    width: 100%;
+}
+
+#billboard_skills {
+    float: right;
+    margin: 110px 125px 0 0;
+}
+
+#billboard_tech {
+    max-width: 460;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#billboard_tools {
+    max-width: 460;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#billboard_concepts {
+    max-width: 460px;
+    width: 100%;
+}
+
+#mobile_phone_billboard_skills {
+    margin: 100px auto 25px;
+    width: 220px;
+    display: none;
+}
+
+#billboard2 {
+    background: url(../images/billboard2_bg.jpg);
+    height: 506px;
+}
+
+#contact_me {
+    float: left;
+    max-width: 407px;
+    width: 100%;
+    margin: 40px 0 0 100px;
+}
+
+#contact_form_bg {
+    background: url(../images/billboard2_contact_form.png);
+    float: right;
+    height: 447px;
+    width: 293px;
+    margin: 40px 160px 0 0;
+    border: 1px solid #FFF;
+}
+
+#contact_form_header {
+    width: 258px;
+    margin: 15px auto 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 17px;
+}
+
+#contact_form {
+    margin: 28px auto 0;
+}
+
+.text_field {
+    width: 212px;
+    height: 45px;
+    margin: 0 0 15px 31px;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    padding-left: 16px;
+    color: #FFF;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 14px;
+}
+
+#text_area {
+    width: 212px;
+    height: 130px;
+    margin: 0 0 15px 31px;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    padding: 15px 0 0 16px;
+    color: #FFF;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 14px;
+}
+
+#btn_submit {
+    width: 228px;
+    height: 45px;
+    margin-left: 31px;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 14px;  
+}
+
+#btn_submit:hover {
+    background: #FFF;
+    color: #FF2626;
+}
+
+#contact_links {
+    max-width: 330px;
+    width: 100%;
+    margin: -75px 0 0 150px;
+}
+
+#contact_links li {
+    float: left;
+    background: #555555;
+    width: 67px;
+    height: 67px;
+    margin-right: 15px;
+    border-radius: 150px;
+}
+
+#contact_links li:hover {
+    background: #FFF;
+}
+
+#contact_links li img {
+    margin-left: -5px;
+}
+
+#mobile_device_contact_links {
+    display: none;
+    width: 230px;
+    margin: 5px 0 32px 81px;
+}
+
+#mobile_device_contact_links li {
+    float: left;
+    background: #555555;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 150px;
+}
+
+#mobile_device_contact_links li img {
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+#mobile_device_contact_links li:hover {
+    background: #FFF;
+}
+
+::-webkit-input-placeholder {
+    color: #FFF;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:1200px) {
+    
+    #billboard_skills {
+        margin-right: 32px;
+    }
+
+    #billboard_photo_frame {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    
+    body {
+        height: 100%;
+    }
+    
+    .container {
+        max-width: 461px;
+    }
+    
+    #billboard2 .container {
+        max-width: 293px;
+    }
+    
+    
+    #billboard_skills {
+        margin: 50px auto 0;
+    }
+    
+    #contact_me {
+        display: none;
+    }
+    
+    #contact_form_bg {
+        margin: 40px auto 0;
+    }
+    
+    #contact_links {
+        display: none;
+    }
+    
+    #mobile_device_contact_links {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #billboard_skills {
+        display: none;
+    }
+    
+    #mobile_phone_billboard_skills {
+        display: block;
+    }
+}
+
+

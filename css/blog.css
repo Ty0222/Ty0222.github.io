@@ -1,0 +1,176 @@
+
+
+html {
+	background: #FFF;
+}
+
+body {
+	background: url(../images/blog_bg.jpg) #000 no-repeat top center;
+	max-height: 2400px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#video_container {
+	width: 1068px;
+	margin: 0 auto;
+}
+
+iframe {
+	margin: 100px auto;
+	border: 1px solid red;
+}
+
+#content_container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#category1 {
+	max-width: 436px;
+	width: 100%;
+	float: left;
+}
+
+#category2 {
+	max-width: 436px;
+	width: 100%;
+	float: right;
+}
+
+.content {
+	max-width: 436px;
+	width: 100%;
+	margin-top: 50px;
+	float: right;
+	color: #FFF;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+#beyond_the_pro {
+	float: left;
+}
+
+.mobile_category {
+	display: none;
+	max-width: 436px;
+	width: 100%;
+}
+
+.mobile_content {
+	display: none;
+	margin-bottom: 100px;
+}
+
+#blog_link_bg {
+	background: url(../images/blog_visit_area_bg.jpg) repeat-x;
+	height: 168px;
+	margin: 45px auto;
+}
+
+#blog_link_container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#blog_link_container p {
+
+	position: absolute;
+	margin: 40px auto 0;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#blog_link_container a {
+	color: #D90000;
+	text-decoration: none;
+	-webkit-text-stroke: 1px #000;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+
+	#video_container {
+		width: 811px;
+	}
+	
+	iframe {
+		width: 811px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	#site_header_name {
+		margin-left: -210px;
+	}
+
+	#video_container {
+		width: 565px;
+		height: 400px;
+	}
+
+	iframe {
+		width: 565px;
+		height: 400px;
+	}
+
+	#content_container {
+		max-width: 436px;
+		margin-top: 200px;
+	}
+
+	.default {
+		display: none;
+	}
+
+	.mobile_category {
+		display: block;
+	}
+
+	.mobile_content {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#video_container {
+		width: 400px;
+		height: 300px;
+	}
+
+	iframe {
+		width: 400px;
+		height: 300px;
+	}
+
+	#blog_link_container p {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	#video_container {
+		width: 300px;
+		height: 200px;
+	}
+
+	#content_container {
+		width: 300px;
+	}
+
+	iframe {
+		width: 300px;
+		height: 200px;
+	}	
+}
