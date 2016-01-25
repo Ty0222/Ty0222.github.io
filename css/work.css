@@ -111,6 +111,13 @@ a:hover .work_preview {
 	}
 }
 
+@media only screen and (max-width: 840px) {
+
+	#wun_bg {
+		height: 92%;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 
 	#infiniti_bg {
