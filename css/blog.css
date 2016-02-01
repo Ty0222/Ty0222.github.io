@@ -98,10 +98,6 @@ iframe {
 
 @media only screen and (max-width: 1024px) {
 
-	#site_header_name {
-		margin-left: -200px;
-	}
-
 	#video_container {
 		width: 811px;
 	}

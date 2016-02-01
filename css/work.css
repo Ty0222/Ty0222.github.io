@@ -85,13 +85,6 @@ a:hover .work_preview {
 	display: none;
 }
 
-@media only screen and (max-width: 1024px) {
-
-	#site_header_name {
-		margin-left: -200px;
-	}
-}
-
 @media only screen and (max-width: 960px) {
 
 	#work_preview_text_infiniti  {

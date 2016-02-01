@@ -152,10 +152,6 @@ body {
 
 @media only screen and (max-width: 1024px) {
 
-	#site_header_name {
-    margin-left: -200px;
-	}
-
 	#l1 {
 		margin: 110px 0 0 82px;
   }
