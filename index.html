@@ -15,6 +15,7 @@
         <a href="index.html">
           <img src="images/site_header_name_lg.png" id="site_header_name">
         </a>
+        <img src="images/mobile_nav_button.png" class="mobile_nav_button">
         <div id="nav">
           <a href="index.html">
             <div id="nav_home">Home</div>
@@ -32,28 +33,38 @@
       </div>
     </div>
     <div class="clear"></div>
+    <div id="mobile_nav_container">
+      <ul id="mobile_nav">
+        <a href="index.html"><li>Home</li></a>
+        <a href="work.html"><li>Work</li></a>
+        <a href="about.html"><li>About Me</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+      </ul>
+    </div>
     <!-- HEADER -->
     <!-- BILLBOARD -->
-    <div class="container">
-      <img src="images/billboard_photo_lg.png" id="billboard_photo_frame">
-      <div id="billboard_skills">
-        <img src="images/billboard_technologies_lg.png" id="billboard_tech">
+    <div id="billboard">
+      <div class="container">
+        <img src="images/billboard_photo_lg.png" id="billboard_photo_frame">
+        <div id="billboard_skills">
+          <img src="images/billboard_technologies_lg.png" id="billboard_tech">
+          <div class="clear"></div>
+          <img src="images/billboard_tools_lg.png" id="billboard_tools">
+          <div class="clear"></div>
+          <img src="images/billboard_concepts_lg.png" id="billboard_concepts">
+        </div>
         <div class="clear"></div>
-        <img src="images/billboard_tools_lg.png" id="billboard_tools">
+        <div id="mobile_phone_billboard_skills">
+          <img src="images/billboard_technologies_med1.png">
+          <img src="images/billboard_technologies_med2.png" style="margin-bottom: 50px;">
+          <img src="images/billboard_tools_med1.png">
+          <img src="images/billboard_tools_med2.png" style="margin-bottom: 50px;">
+          <img src="images/billboard_concepts_med1.png">
+          <img src="images/billboard_concepts_med2.png">
+          <img src="images/billboard_concepts_med3.png">
+        </div>
         <div class="clear"></div>
-        <img src="images/billboard_concepts_lg.png" id="billboard_concepts">
       </div>
-      <div class="clear"></div>
-      <div id="mobile_phone_billboard_skills">
-        <img src="images/billboard_technologies_med1.png">
-        <img src="images/billboard_technologies_med2.png" style="margin-bottom: 50px;">
-        <img src="images/billboard_tools_med1.png">
-        <img src="images/billboard_tools_med2.png" style="margin-bottom: 50px;">
-        <img src="images/billboard_concepts_med1.png">
-        <img src="images/billboard_concepts_med2.png">
-        <img src="images/billboard_concepts_med3.png">
-      </div>
-      <div class="clear"></div>
     </div>
     <div id="billboard2">
       <div class="container">
@@ -100,5 +111,7 @@
       </div>
     </div>
     <!-- FOOTER -->
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="js/mobile_nav.js"></script>
   </body>
 </html>

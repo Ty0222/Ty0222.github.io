@@ -193,7 +193,7 @@ body {
         height: 100%;
     }
     
-    .container {
+    #billboard .container {
         max-width: 461px;
     }
     
