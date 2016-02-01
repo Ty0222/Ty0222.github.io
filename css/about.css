@@ -44,7 +44,7 @@ body {
 	float: none;
 }
 
-li {
+.bubbles li {
 	position: absolute;
 	max-width: 150px;
 	width: 100%;
@@ -152,6 +152,10 @@ li {
 
 @media only screen and (max-width: 1024px) {
 
+	#site_header_name {
+    margin-left: -200px;
+	}
+
 	#l1 {
 		margin: 110px 0 0 82px;
   }
@@ -203,7 +207,7 @@ li {
 
 @media only screen and (max-width: 768px) {
 	
-	li {
+	.bubbles li {
 		font-size: 15px;
 		max-width: 130px;
 	}

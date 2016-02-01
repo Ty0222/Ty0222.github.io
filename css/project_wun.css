@@ -597,6 +597,10 @@ a:hover #site_view p {
 
 @media only screen and (max-width: 1024px) {
 
+	#site_header_name {
+    margin-left: -200px;
+	}
+
 	#content_title2 p {
 		margin-left: 2px;
 	}
@@ -611,10 +615,6 @@ a:hover #site_view p {
 }
 
 @media only screen and (max-width: 966px) {
-
-	#site_header_name {
-    margin-left: -200px;
-	}
 
 	#analysis_bg1 {
 		background: url(../images/project_bg2.png) center top;

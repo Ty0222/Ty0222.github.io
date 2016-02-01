@@ -76,9 +76,9 @@ a:hover .work_preview_blurred {
 	display: block;
 	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
-  	-o-filter: blur(2px);
-  	-ms-filter: blur(2px);
-    -webkit-transform: translate3d(0, 0, 0);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 a:hover .work_preview {

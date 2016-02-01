@@ -187,6 +187,13 @@ body {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+
+    #site_header_name {
+        margin-left: -200px;
+    }
+}
+
 @media only screen and (max-width: 960px) {
     
     body {
