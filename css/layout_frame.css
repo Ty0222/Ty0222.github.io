@@ -69,8 +69,8 @@
 
 #nav_home:hover {
     background: #FFF;
-    color: #FF2626;
-    border-bottom: 1px solid #FF2626;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 #nav_work {
@@ -85,8 +85,8 @@
 
 #nav_work:hover {
     background: #FFF;
-    color: #FF2626;
-    border-bottom: 1px solid #FF2626;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 #nav_about {
@@ -101,8 +101,8 @@
 
 #nav_about:hover {
     background: #FFF;
-    color: #FF2626;
-    border-bottom: 1px solid #FF2626;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 #nav_blog {
@@ -117,8 +117,8 @@
 
 #nav_blog:hover {
     background: #FFF;
-    color: #FF2626;
-    border-bottom: 1px solid #FF2626;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 /* MOBILE HEADER */
@@ -146,7 +146,7 @@
 #mobile_nav li {
     background: #FFF;
     padding: 10px 0;
-    border: 1px solid #FF2626;
+    border: 1px solid #000;
     color: #000;
     text-align: center;
     font-family: Verdana, Arial, Sans-serif;
@@ -154,7 +154,7 @@
 }
 
 #mobile_nav li:hover {
-    background: #FF2626;
+    background: #000;
     color: #FFF;
 }
 
