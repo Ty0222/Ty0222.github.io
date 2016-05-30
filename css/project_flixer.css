@@ -318,7 +318,7 @@ a:hover #site_view p {
 	}
 
 	#content_title1 p {
-		margin-left: 0;
+		margin-left: -5px;
 	}
 
 	#content1 p {
@@ -381,11 +381,23 @@ a:hover #site_view p {
 	}
 
 	#home_photo {
-		margin-top: 700px;		
+		margin-top: 600px;		
 	}
 
 	.content_big p {
 		margin-top: 160px;
+	}
+
+	.view_movie_photo {
+		margin-top: 450px;
+	}
+
+	.genres_photo {
+		margin-top: 450px;
+	}
+
+	.account_photo {
+		margin-top: 350px;
 	}
 }
 
@@ -412,18 +424,34 @@ a:hover #site_view p {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 350px) {
 
 	#site_view {
 		max-width: 80px;
-		margin-top: 500px;
+		margin-top: 400px;
 	}
 
 	#intro_photo {
-		margin-top: 600px;
+		margin-top: 500px;
 	}
 
-	#spec_photo1 {
-		margin-left: 65px;
+	#content_title1 p {
+		margin-top: 210px;
+	}
+
+	#content1 p {
+		margin-top: 280px;
+	}
+
+	.view_movie_photo {
+		margin-top: 470px;
+	}
+
+	.genres_photo {
+		margin-top: 480px;
+	}
+
+	.account_photo {
+		margin-top: 350px;
 	}
 }
