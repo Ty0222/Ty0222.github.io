@@ -70,6 +70,11 @@ body {
 	text-align: center;
 }
 
+.svbg_clr { 
+	display: none;
+	background-color: rgba(205, 198, 189, 0.4);
+}
+
 #intro_photo {
 	max-width: 919px;
 	width: 100%;
@@ -202,24 +207,25 @@ a:hover #site_view p {
 
 #analysis_bg2 {
 	background: url(../images/project_bg_tan.png) no-repeat top center;
-	height: 950px;
+	height: 1350px;
 	margin-top: -50px;
 }
 
 #analysis_container2 {
-	max-width: 1300px;
+	position: relative;
+	max-width: 1240px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-#content_title2 {
+.content_title2 {
 	float: left;
 	max-width: 360px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-#content_title2 p {
+.content_title2 p {
 	position: absolute;
 	max-width: 360px;
 	width: 100%;
@@ -229,16 +235,16 @@ a:hover #site_view p {
 	font-size: 30px;
 }
 
-#content2 {
+.content2 {
 	float: left;
-	max-width: 580px;
+	max-width: 350px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-#content2 p {
+.content2 p {
 	position: absolute;
-	max-width: 580px;
+	max-width: 350px;
 	width: 100%;
 	margin: 130px auto 0;
 	color: #000;
@@ -247,17 +253,17 @@ a:hover #site_view p {
 }
 
 #gallery_photo1 {
+	float: right;
 	max-width: 646px;
 	width: 100%;
-	float: left;
-	margin-top: 323px;
+	margin-top: 65px;
 }
 
 #gallery_photo2 {
+	float: right;
 	max-width: 646px;
 	width: 100%;
-	float: right;	
-	margin-top: 323px;
+	margin-top: 50px;
 }
 
 #analysis_bg3 {
@@ -361,28 +367,12 @@ a:hover #site_view p {
 
 @media only screen and (max-width: 1300px) {
 
-	#analysis_bg2 {
-		height: 1350px;
-	}
-
-	#analysis_container2 {
-		max-width: 1240px;
-	}
-
-	#content2 p {
-		max-width: 320px;
-	}
-
 	#gallery_photo1 {
-		float: right;
 		max-width: 630px;
-		margin-top: 65px;
 	}
 
 	#gallery_photo2 {
-		float: right;
 		max-width: 630px;
-		margin-top: 50px;		
 	}
 }
 
@@ -421,19 +411,19 @@ a:hover #site_view p {
 		margin-left: 180px;		
 	}
 
-	#content2 p {
+	.content2 p {
 		margin-top: 180px;
 	}
 }
 
 @media only screen and (max-width: 1024px) {
 
-	#content_title2 p {
-		margin-left: 2px;
+	.content_title2 p {
+		margin-left: 5px;
 	}
 
-	#content2 p {
-		margin-left: 2px;
+	.content2 p {
+		margin-left: 5px;
 	}
 }
 
@@ -468,26 +458,20 @@ a:hover #site_view p {
 		max-width: 630px;
 	}
 
-	#content_title2 p {
+	.content_title2 p {
 		max-width: 630px;
+		margin-left: 0;
 		text-align: center;
 }
 
-	#content2 p {
+	.content2 p {
 		max-width: 600px;
+		margin-left: 0;
 		text-align: center;
 	}
 
 	#gallery_photo1 {
-		float: right;
-		max-width: 630px;
 		margin-top: 425px;
-	}
-
-	#gallery_photo2 {
-		float: right;
-		max-width: 630px;
-		margin-top: 50px;		
 	}
 }
 

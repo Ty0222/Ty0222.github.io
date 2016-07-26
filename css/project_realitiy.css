@@ -76,6 +76,11 @@ body {
 	text-align: center;
 }
 
+.svbg_clr { 
+	display: none;
+	background-color: rgba(96, 215, 0, 0.4);
+}
+
 #intro_photo {
 	max-width: 600px;
 	width: 100%;

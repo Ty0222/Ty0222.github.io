@@ -124,8 +124,8 @@
 /* MOBILE HEADER */
 
 #mobile_nav_container {
-    position: fixed;
     z-index: 98;
+    position: fixed;
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
