@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 
+	var $window = $(window);
+
 	//checks if current page matches parameter
 	// parameter must be a regular expression
 	function pageIs(page){
@@ -8,7 +10,7 @@ jQuery(document).ready(function($){
 
 	//focus window on given element
 	function objectInView(div, margin){
-		return $(window).scrollTop( $( div ).offset().top - margin );
+		return $window.scrollTop( $(div).offset().top - margin );
 	}
 
 	/* Autoscrolls page in same direction that user is scrolling to the page's nearest project preview image. */
@@ -16,13 +18,13 @@ jQuery(document).ready(function($){
 	//scrolls top of window to given element
 	//add distance between top of window & elem with 2nd param
 	function scroll_to(div, margin){
-		$( "html, body" ).stop().animate({
+		$("html, body").stop().animate({
 			scrollTop: $(div).offset().top - margin
-		},1400);
+		},1000);
 	}
 
 	//work page & 1024px min-width window
-	if ( pageIs(/work.html/) && $( window ).width() >= 1024 )
+	if ( pageIs(/work.html/) && $window.width() >= 1024 )
 	{
 		//array of class selectors representing each project
 		var projects = [".prg1", ".prg2", ".prg3", ".prg4", ".prg5"];
@@ -32,7 +34,7 @@ jQuery(document).ready(function($){
 		objectInView(".prg1", 100);
 
 
-		$( window ).bind( "mousewheel DOMMouseScroll", function(event){
+		$window.bind( "mousewheel DOMMouseScroll", function(event){
 			//scrolling up & not at top of docuemnt
 	    if ( projects[i-1] && event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0 )
 	    {
@@ -45,7 +47,7 @@ jQuery(document).ready(function($){
 	    	if ( projects[i+1] )
 	    	{
 	    		i++;
-	    		scroll_to( projects[i], 100 );
+	    		scroll_to(projects[i], 100);
 	    	}
 
 	    }
