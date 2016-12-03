@@ -1,8 +1,6 @@
 
-
 body {
 	background: #000;
-	
 }
 
 .work_container {
@@ -73,7 +71,7 @@ body {
 
 .work_border {
 	border-radius: 5px;
-	border: 1px solid #444444;
+	border: 1px solid #FFF;
 }
 
 a:hover .work_preview {
@@ -126,7 +124,7 @@ a:hover .glow_infiniti {
 }
 
 a:hover .glow_wun {
-	box-shadow: 0 0 1px 10px  #00BFFF inset;
+	box-shadow: 0 0 1px 10px  #459FAA inset;
 }
 
 @media only screen and (max-width: 960px) {
