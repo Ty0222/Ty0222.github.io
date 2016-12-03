@@ -1,254 +1,40 @@
-
-
-html {
-	background: #FFF;
-}
-
-body {
-	background: url(../images/project_bg.jpg);
-	max-height: 900px;
+.wun_green_bg {
+	position: relative;
+	background: #459FAA;
 	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-#intro_container {
-	max-width: 919px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#intro_title {
-	position: absolute;
-	max-width: 919px;
-	width: 100%;
-	margin: 100px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 40px;
-	text-align: center;
-}
-
-#intro_content {
-	position: absolute;
-	max-width: 919px;
-	width: 100%;
-	margin: 30px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 16px;
-	text-align: center;
-}
-
-#site_view_container {
-	max-width: 150px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#site_view {
-	position: absolute;
-	max-width: 150px;
-	width: 100%;
-	max-height: 45px;
-	height: 100%;
-	max-height: 45px;
-	margin: 300px auto 0;
-	border: 1px solid #BBBBBB;
-	transition: .6s;
-}
-
-#site_view a {
-	text-decoration: none;
-}
-
-#site_view p {
-	margin: 14px auto 0;
-	color: #222222;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
 }
 
 .svbg_clr { 
 	display: none;
-	background-color: rgba(27, 79, 127, 0.4);
+	background-color: rgba(69,159,170, 0.4);
 }
 
-#intro_photo {
-	max-width: 919px;
-	width: 100%;
-	margin: 438px auto 5px;
+#site_view_container {
+	max-width: 115px;
+}
+
+#site_view {
+	max-width: 115px;
 }
 
 a:hover #site_view {
-	background-color: #1B4F7F;
+	background-color: #459FAA;
 }
 
-a:hover #site_view p {
+#wireframe_title p {
 	color: #FFF;
 }
 
-#wireframe_bg {
-	background: url(../images/project_bg_blue.png) center top;
-	max-height: 2000px;
-	height: 100%;
-}
-
-.wireframe_title {
-	max-width: 270px;
+#index_photo {
+	max-width: 744px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 475px auto 120px;
 }
 
-.wireframe_title p {
-	position: absolute;
-	max-width: 270px;
-	width: 100%;
-	margin: 50px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 40px;
-	text-align: center;
-}
-
-#wireframe_container {
-	max-width: 1280px;
-	width: 100%;
-	margin: 0 auto 50px;
-}
-
-#wireframe1 {
-	float: left;
-	max-width: 635px;
-	width: 100%;
-	margin-top: 150px;
-}
-
-#wireframe2 {
-	float: right;
-	max-width: 635px;
-	width: 100%;
-	margin-top: 150px;
-}
-
-#wireframe3 {
-	max-width: 635px;
-	width: 100%;
-}
-
-#analysis_bg1 {
-	background: url(../images/project_bg_analysis.png) no-repeat center top;
-	max-height: 1535px;
-	height: 100%;
-	margin-top: -50px;
-}
-
-#analysis_title1 {
-	margin: 0 auto;
-}
-
-#analysis_title1 p {
-	position: absolute;
-	width: 100%;
-	margin: 80px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-}
-
-#analysis_container1 {
+.guide_photo {
 	max-width: 790px;
 	width: 100%;
-	margin: 0 auto;
-}
-
-#content_title1 {
-	max-width: 306px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content_title1 p {
-	position: absolute;
-	max-width: 306px;
-	width: 100%;
-	margin: 200px 0 0 235px;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-	text-align: right;
-}
-
-#content1 {
-	max-width: 580px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content1 p {
-	position: absolute;
-	max-width: 580px;
-	width: 100%;
-	margin: 290px 0 0 235px;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-#guide_photo {
-	max-width: 790px;
-	width: 100%;
-	margin: 460px 0 120px 235px;
-}
-
-#analysis_bg2 {
-	background: url(../images/project_bg_blue.png) no-repeat top center;
-	height: 1100px;
-	margin-top: -50px;
-}
-
-#analysis_container2 {
-	max-width: 1240px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content_title2 {
-	float: left;
-	max-width: 360px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content_title2 p {
-	position: absolute;
-	max-width: 360px;
-	width: 100%;
-	margin: 65px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-}
-
-.content2 {
-	float: left;
-	max-width: 350px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content2 p {
-	position: absolute;
-	max-width: 350px;
-	width: 100%;
-	margin: 130px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
+	margin: 460px auto 120px;
 }
 
 #feature_photo1 {
@@ -265,280 +51,13 @@ a:hover #site_view p {
 	margin-top: 50px;
 }
 
-#analysis_bg3 {
-	background: url(../images/project_bg2.png) repeat-y top center;
-	max-height: 4600px;
-	height: 100%;
-	margin-top: -50px;
+.analysis_photo_no_content {
+	margin-top: 50px;
 }
 
-#analysis_container3 {
-	max-width: 1300px;
-	width: 100%;
-	margin: 0 auto;
-}
+/* MEDIA QUERIES */
 
-#content_title3 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content_title3 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 100px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-	text-align: center;
-}
-
-#content3 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content3 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 170px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-#referral_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 300px auto 0;
-}
-
-#epic_battle_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 50px auto 0;
-}
-
-#analysis_container4 {
-	max-width: 1300px;
-	width: 100%;
-	margin: 0 auto 50px;
-}
-
-#content_title4 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content_title4 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 100px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-	text-align: center;
-}
-
-#content4 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content4 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 170px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-#referral_signup_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 300px auto 0;
-}
-
-#analysis_bg4 {
-	background: url(../images/project_bg_blue.png) repeat-y top center;
-	max-height: 8700px;
-	height: 100%;
-	margin-top: -50px;
-}
-
-#analysis_container5 {
-	max-width: 1300px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content_title5 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content_title5 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 100px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-	text-align: center;
-}
-
-.content5 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content5 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 170px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-#welcome_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 300px auto 0;
-}
-
-#congratz_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 50px auto 0;
-}
-
-#benefits_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 50px auto 0;
-}
-
-#analysis_container6 {
-	max-width: 1300px;
-	width: 100%;
-	margin: 0 auto 50px;
-}
-
-.content_title6 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content_title6 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 50px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-	text-align: center;
-}
-
-.content6 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.content6 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 120px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-#referral_form_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 250px auto 0;
-}
-
-#analysis_bg5 {
-	background: url(../images/project_bg2.png)repeat-y top center;
-	max-height: 3000px;
-	height: 100%;
-	margin-top: -50px;
-}
-
-#analysis_container7 {
-	max-width: 1300px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content_title7 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content_title7 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 100px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 30px;
-	text-align: center;
-}
-
-#content7 {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content7 p {
-	position: absolute;
-	max-width: 1000px;
-	width: 100%;
-	margin: 170px auto 0;
-	color: #000;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-#destination_photo {
-	max-width: 1300px;
-	width: 100%;
-	margin: 300px auto 0;
-}
-
-.white_text p {
-	color: #FFF;
-}
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1024px) {
 
 	#feature_photo1 {
 		max-width: 630px;
@@ -549,307 +68,102 @@ a:hover #site_view p {
 	}
 }
 
-
-@media only screen and (max-width: 1270px) {
-
-	#wireframe_container {
-		max-width: 842px;
-	}
-
-	#wireframe1 {
-		max-width: 420px;
-	}
-
-	#wireframe2 {
-		max-width: 420px;
-	}
-
-	#wireframe3 {
-		max-width: 420px; 
-	}
-
-	#analysis_container1 {
-		max-width: 600px;
-	}
-
-	#content_title1 p {
-		margin-left: 180px;
-	}
-
-	#content1 p {
-		margin-left: 180px;
-	}
-
-	#guide_photo {
-		margin-left: 180px;		
-	}
-
-	.content2 p {
-		margin-top: 180px;
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	
-	.content_title2 p {
-		margin-left: 5px;
-	}
-
-	.content2 p {
-		margin-left: 5px;
-	}
-
-	#referral_form_photo {
-		margin-top: 200px;
-	}
-}
-
-@media only screen and (max-width: 966px) {
-
-	#analysis_bg1 {
-		background: url(../images/project_bg2.png) center top;
-		margin-top: -50px;
-	}
-
-	#wireframe3 {
-		margin-bottom: 50px;
-	}
-
-	#content_title1 p {
-		margin-left: 0;
-	}
-
-	#content1 p {
-		margin-left: 0;
-	}
-
-	#guide_photo {
-		margin-left: 0;		
-	}
-
-	#analysis_bg2 {
-		height: 1400px;
-	}
-
-	#analysis_container2 {
-		max-width: 630px;
-	}
-
-	.content_title2 p {
-		max-width: 630px;
-		margin-left: 0;
-		text-align: center;
-}
-
-	.content2 p {
-		max-width: 600px;
-		margin-left: 0;
-		text-align: center;
-	}
+@media only screen and (max-width: 768px) {
 
 	#feature_photo1 {
-		margin-top: 425px;
+		margin-top: 275px;
 	}
 }
 
-@media only screen and (max-width: 840px) {
-
-	#wireframe_container {
-		max-width: 682px;
-	}
-
-	#wireframe1 {
-		max-width: 340px;
-	}
-
-	#wireframe2 {
-		max-width: 340px;
-	}
-
-	#wireframe3 {
-		max-width: 340px;
-	}
-}
-
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 414px) {
 
 	#site_view {
-		margin-top: 400px;
+		margin-top: 450px;
 	}
 
 	#intro_photo {
-		margin-top: 490px;
+		margin-top: 550px;
 	}
 
-	#content3 p {
-	margin-top: 220px;
+	.guide_photo {
+		margin-top: 530px;		
+	}
+
+	#feature_photo1 {
+		margin-top: 290px;
 	}
 
 	#referral_photo {
-		margin-top: 485px;
+		margin-top: 350px;
 	}
 
-	.content5 p {
-		margin-top: 220px;
+	#referral_signup_photo {
+		margin-top: 325px;
 	}
 
 	#welcome_photo {
-		margin-top: 500px;
-	}
-
-	.content6 p {
-		margin-top: 180px;
-	}
-
-	#referral_form_photo {
-		margin-top: 400px;
-	}
-
-	#content7 p {
-		margin-top: 210px;
+		margin-top: 375px;
 	}
 
 	#destination_photo {
-		margin-top: 485px;
+		margin-top: 375px;
 	}
 }
 
-@media only screen and (max-width: 680px) {
-
-	#wireframe_container {
-		max-width: 402px;
-	}
-
-	#wireframe1 {
-		max-width: 400px;
-	}
-	
-	#wireframe2 {
-		max-width: 400px;
-		margin-top: 0;
-	}
-	
-	#wireframe3 {
-		max-width: 400px;
-	}
-
-	#guide_photo {
-		margin-top: 600px;		
-	}
-}
-
-@media only screen and (max-width: 600px) {
-
-	#analysis_bg2 {
-		height: 1300px;
-	}
-
-	#referral_signup_photo {
-		margin-top: 400px;
-	}
-}
-
-@media only screen and (max-width: 532px) {
+@media only screen and (max-width: 375px) {
 
 	#site_view {
-		margin-top: 430px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-
-	#analysis_bg2 {
-		height: 1200px;
-	}
-
-	#congratz_photo {
-		margin-top: 100px;
-	}
-
-	#benefits_photo {
-		margin-top: 100px;
-	}
-}
-
-@media only screen and (max-width: 431px) {
-
-	#analysis_bg2 {
-		height: 1080px;
-	}
-}
-
-@media only screen and (max-width: 418px) {
-	
-  #congratz_photo {
-		margin-top: 150px;
-	}
-
-	#benefits_photo {
-		margin-top: 150px;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-
-	#site_view_container {
-		max-width: 120px;
-	}
-
-	#site_view {
-		max-width: 120px;
-		margin-top: 450px;
+		margin-top: 510px;
 	}
 
 	#intro_photo {
-		margin-top: 540px;
+		margin-top: 610px;
 	}
 
-	#content_title4 p {
-		margin-top: 75px;
-	}
-
-	#referral_signup_photo {
-		margin-top: 450px;
+	.screen_375px_title_margin p {
+		margin-top: 30px;
 	}
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 320px) {
 
-	#congratz_photo {
-		margin-top: 5px;
+	#site_view {
+		margin-top: 550px;
 	}
 
-	#benefits_photo {
-		margin-top: 5px;
+	#intro_photo {
+		margin-top: 650px;
 	}
 
-	.content_title6 p {
-		margin-top: -5px;
+	.screen_320px_title_margin p {
+		margin-top: 30px;
 	}
 
-	.content6 p {
-		margin-top: 70px;
+	.guide_photo {
+		margin-top: 560px;		
+	}
+
+	#feature_photo1 {
+		margin-top: 310px;
+	}
+
+	#referral_photo {
+		margin-top: 400px;
+	}
+
+	#referral_signup_photo {
+		margin-top: 360px;
+	}
+
+	#welcome_photo {
+		margin-top: 410px;
 	}
 
 	#referral_form_photo {
-		margin-top: 230px;
-	}
-}
-
-@media only screen and (max-width: 378px) {
-
-	#site_view {
-		margin-top: 530px;
+		margin-top: 310px;
 	}
 
-	#intro_photo {
-		margin-top: 600px;
-	}
-}
-
-@media only screen and (max-width: 340px) {
-
-	#feature_photo1 {
-		margin-top: 480px;
+	#destination_photo {
+		margin-top: 410px;
 	}
 }

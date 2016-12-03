@@ -1,0 +1,132 @@
+.skyblue_bg {
+	position: relative;
+	background: #BFDFFF;
+	height: 100%;
+}
+
+.svbg_clr { 
+	display: none;
+	background-color: rgba(191, 223, 255, 0.4);
+}
+
+#site_view {
+	margin-top: 325px;
+}
+
+a:hover #site_view {
+	background-color: #BFDFFF;
+}
+
+.blueprint_photo {
+	max-width: 744px;
+	width: 100%;
+	margin: 475px auto 120px;
+}
+
+.content_without_title p {
+	margin-top: 100px;
+}
+
+.csamp_first {
+	margin-top: 280px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+
+	#site_view {
+		margin-top: 335px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+
+	#site_view {
+		margin-top: 400px;
+	}
+
+	#intro_photo {
+		margin-top: 500px;
+	}
+
+	.blueprint_photo {
+		margin-top: 500px;
+	}
+
+	.profile_photo {
+		margin-top: 375px;
+	}
+
+	.user_form_photo {
+		margin-top: 350px;
+	}
+
+	.signup_form {
+		margin-top: 400px;
+	}
+
+	.csamp_margin_lg {
+		margin-top: 430px;
+	}
+
+	.csamp_margin_med {
+		margin-top: 360px;
+	}
+
+	.csamp_margin_sm {
+		margin-top: 325px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+
+	#site_view {
+		margin-top: 450px;
+	}
+
+	#intro_photo {
+		margin-top: 550px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	#site_view {
+		margin-top: 480px;
+	}
+
+	#intro_photo {
+		margin-top: 580px;
+	}
+
+	.blueprint_photo {
+		margin-top: 520px;
+	}
+
+	.profile_photo {
+		margin-top: 400px;
+	}
+
+	.user_form_photo {
+		margin-top: 360px;
+	}
+
+	.signup_form {
+		margin-top: 450px;
+	}
+
+	.csamp_margin_lg {
+		margin-top: 475px;
+	}
+
+	.csamp_margin_med {
+		margin-top: 400px;
+	}
+
+	.csamp_margin_sm {
+		margin-top: 360px;
+	}
+}
