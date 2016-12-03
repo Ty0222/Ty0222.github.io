@@ -50,13 +50,13 @@ body {
 	width: 100%;
 	color: #000;
 	font-family: Verdana, Arial, Sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	text-decoration: none;
 }
 
 #l1 {
-	margin: 117px 0 0 88px;
+	margin: 127px 0 0 88px;
 }
 
 #l2 {
@@ -66,20 +66,20 @@ body {
 }
 
 #l3 {
-	margin: 945px 0 0 88px;
+	margin: 950px 0 0 88px;
 }
 
 
 #l4 {
-	margin: 1300px 0 0 88px;
+	margin: 1305px 0 0 88px;
 }
 
 #l5 {
-	margin: 1690px 0 0 88px;
+	margin: 1700px 0 0 88px;
 }
 
 #l6 {
-	margin: 2075px 0 0 88px;
+	margin: 2090px 0 0 88px;
 }
 
 #l7 {
@@ -93,7 +93,7 @@ body {
 }
 
 #l9 {
-	margin: 965px 0 0 844px;
+	margin: 975px 0 0 844px;
 }
 
 #l10 {
@@ -101,11 +101,45 @@ body {
 }
 
 #l11 {
-	margin: 1685px 0 0 844px;
+	margin: 1700px 0 0 844px;
 }
 
 #l12 {
-	margin: 2075px 0 0 844px;
+	margin: 2080px 0 0 844px;
+}
+
+.highlight {
+	transition: .4s;
+}
+
+.highlight:hover {
+	z-index: 1;
+	position: absolute;
+	color: red;
+	border-radius: 150px;
+	box-shadow: 0 0 30px 65px rgba(255, 255, 255, 0.3);
+}
+
+.highlight:hover:before {
+	z-index: -2;
+	content: "";
+	position: absolute;
+	right: 10px;
+	left: 10px;
+	top: 25px;
+	bottom: 35px;
+	box-shadow: 0 0 25px 50px rgba(255, 255, 255, 0.3);
+}
+
+.highlight:hover:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	right: 10px;
+	left: 10px;
+	top: 25px;
+	bottom: 35px;
+	box-shadow: 0 0 25px 50px rgba(255, 255, 255, 0.3) inset;
 }
 
 #mypath_content {
@@ -153,7 +187,7 @@ body {
 @media only screen and (max-width: 1024px) {
 
 	#l1 {
-		margin: 110px 0 0 82px;
+		margin: 120px 0 0 82px;
   }
 
 	#l2 {
@@ -161,7 +195,7 @@ body {
 	}
 
 	#l3 {
-		margin: 905px 0 0 82px;
+		margin: 910px 0 0 82px;
 	}
 
 	#l4 {
@@ -169,15 +203,15 @@ body {
 	}
 
 	#l5 {
-		margin: 1620px 0 0 82px;
+		margin: 1630px 0 0 82px;
 	}
 
 	#l6 {
-		margin: 1991px 0 0 82px;
+		margin: 2010px 0 0 82px;
 	}
 
 	#l7 {
-		margin: 320px 0 0 805px;
+		margin: 323px 0 0 805px;
 	}
 
 	#l8 {
@@ -185,19 +219,19 @@ body {
 	}
 
 	#l9 {
-		margin: 920px 0 0 805px;
+		margin: 935px 0 0 805px;
 	}
 
 	#l10 {
-		margin: 1295px 0 0 805px;
+		margin: 1300px 0 0 805px;
 	}
 
 	#l11 {
-		margin: 1615px 0 0 805px;
+		margin: 1635px 0 0 805px;
 	}
 
 	#l12 {
-		margin: 1991px 0 0 805px;
+		margin: 1995px 0 0 805px;
 	}
 }
 
