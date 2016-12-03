@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
 	var $window = $(window);
-	var $site_view_sltr = $("#site_view");
+	var $site_view_slctr = $("#site_view");
 	var $site_view_text = $("a #site_view p");
 	var $site_view_link = $("a #site_view");
 
@@ -21,24 +21,21 @@ jQuery(document).ready(function($) {
 	//all project pages
 	if ( pageIs(/project_/) )
 	{
-		/* Sticks site view button to page header and fixes to window as user scrolls past button. Returns button to original position once passed in opposite direction. */ 
+		/* Sticks site view button to top of window and fixes to window as user scrolls past button. Returns button to original position once passed in opposite direction. */ 
 
 		//while scrolling page
 		$window.bind("mousewheel DOMMouseScroll", function(){
 			
-			//header passes below site_view selector
-			if ( $window.scrollTop() > SITE_VIEW_POS - 60 )
+			//Top of window passes below site_view selector
+			if ( $window.scrollTop() > SITE_VIEW_POS )
 			{
-				//stick site_view to header & add transparent colo to bg 
-				$site_view_sltr.css({
+				//stick site_view to top of window & add transparent color to bg 
+				$site_view_slctr.css({
 					"z-index": "97",
 					"position": "fixed",
-					"margin-top": "60px",
+					"margin-top": "0",
 					"background-color": $(".svbg_clr").css("background-color")
 				});
-
-				//change site_view text to white
-				$site_view_text.css("color", "#FFF");
 
 				//keep same css styles for hovering
 				$site_view_link.hover(function(){
@@ -53,10 +50,10 @@ jQuery(document).ready(function($) {
 				});
 
 			}
-			//header passes above site_view return to default css
-			else if ( $window.scrollTop() < SITE_VIEW_POS && $site_view_sltr.css("position") == "fixed" )
+			//Top of window passes above site_view return to default css
+			else if ( $window.scrollTop() < SITE_VIEW_POS && $site_view_slctr.css("position") == "fixed" )
 			{
-				$site_view_sltr.css({
+				$site_view_slctr.css({
 					"position": "absolute",
 					"background-color": "",
 					"margin-left": "auto",
@@ -65,17 +62,13 @@ jQuery(document).ready(function($) {
 					"margin-top": SITE_VIEW_POS
 				});
 
-				$site_view_text.css("color", "#222222");
-
 				$site_view_link.hover(function(){
 
 					$site_view_link.css( "background-color", $(".svbg_clr").css("background-color").replace("0.4", "1") );
-					$site_view_text.css("color", "#FFF");
 				});
 
 				$site_view_link.mouseleave(function(){
 					$site_view_link.css("background-color", "");
-					$site_view_text.css("color", "#222");
 				});
 
 			}
@@ -85,12 +78,12 @@ jQuery(document).ready(function($) {
 			//only infiniti & wun project pages & 800px min-width window
 			if ( $window.width() >= 800 && ( pageIs(/infiniti/) || pageIs(/wun/) ) )
 			{
-				//scrolling from analysis_bg2 to analysis_bg3
-				if ( $window.scrollTop() > topOfObject("#analysis_bg2") - 60 && $window.scrollTop() + 240 + 
-					$(".content2 p").outerHeight() + $(".content_title2 p").outerHeight() < topOfObject("#analysis_bg3") )
+				//scrolling from analysis2 area to analysis3 area
+				if ( $window.scrollTop() > topOfObject("#analysis2") && $window.scrollTop() + 240 + 
+					$(".analysis_content_sideview p").outerHeight() + $(".analysis_content_title_sideview p").outerHeight() < topOfObject("#analysis3") )
 				{
 					//fix position of content to window 
-					$(".content2, .content_title2").css({
+					$(".analysis_content_sideview, .analysis_content_title_sideview").css({
 						"position": "fixed",
 						"top": "50px"
 					});
@@ -99,7 +92,7 @@ jQuery(document).ready(function($) {
 				else
 				{
 					//return content to default
-					$(".content2, .content_title2").css({
+					$(".analysis_content_sideview, .analysis_content_title_sideview").css({
 						"position": "static",
 						"top": "0"
 					});	
