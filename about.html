@@ -10,38 +10,7 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-		<div id="header">
-      <img src="images/blur_header.png" id="blur_header">
-      <div class="container">
-        <a href="index.html">
-          <img src="images/site_header_name_lg.png" id="site_header_name">
-        </a>
-        <img src="images/mobile_nav_button.png" class="mobile_nav_button">
-        <div id="nav">
-          <a href="index.html">
-            <div id="nav_home">Home</div>
-          </a>
-          <a href="work.html">
-            <div id="nav_work">Work</div>
-          </a>
-          <a href="about.html">
-            <div id="nav_about">About Me</div>
-          </a>
-          <a href="blog.html">
-            <div id="nav_blog">Blog</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div id="mobile_nav_container">
-      <ul id="mobile_nav">
-        <a href="index.html"><li>Home</li></a>
-        <a href="work.html"><li>Work</li></a>
-        <a href="about.html"><li>About Me</li></a>
-        <a href="blog.html"><li>Blog</li></a>
-      </ul>
-    </div>
+			<div id="included_header_file"></div>
 		<!-- HEADER -->
 		<!-- BODY -->
 			<div id="mypath_title_container">
@@ -52,39 +21,39 @@
 				<ul class="bubbles">
 					<div id="left">
 						<a href="images/mypath_photo1.jpg" data-lightbox="1">
-							<li id="l1">Graduated High School (2007)</li>
+							<li id="l1" class="highlight">Graduated High School (2007)</li>
 						</a>
 							<li id="l2">Moved from NJ to NYC</li>
 						<a href="images/mypath_photo4.jpg" data-lightbox="2">
-							<li id="l3">Worked as a Marketing & Sales Rep. for Legal Shield</li>
+							<li id="l3" class="highlight">Worked as a Marketing & Sales Rep. for Legal Shield</li>
 						</a>
 						<a href="images/mypath_photo5.jpg" data-lightbox="3">
-							<li id="l4">Left Legal Shield/ Joined Wakeupnow as Marketing & Sales Rep. (2013)</li>
+							<li id="l4" class="highlight">Left Legal Shield/ Joined Wakeupnow as Marketing & Sales Rep. (2013)</li>
 						</a>
 						<a href="images/mypath_photo8.jpg" data-lightbox="4">
-							<li id="l5">Wakeupnow Closes its Operations in the U.S. (2015)</li>
+							<li id="l5" class="highlight">Wakeupnow Closes its Operations in the U.S. (2015)</li>
 						</a>
-						<a href="images/mypath_photo9.jpg" data-lightbox="5">
-							<li id="l6">Began Working as a Full-Stack Developer</li>
+						<a href="images/mypath_photo9-1.jpg" data-lightbox="5">
+							<li id="l6" class="highlight">Began Working as a Full-Stack Developer</li>
 						</a>
 					</div>
 					<div id="right">
 						<a href="images/mypath_photo2.jpg" data-lightbox="6">
-							<li id="l7">Worked as a Charity Advocate for Children International 
+							<li id="l7" class="highlight">Worked as a Charity Advocate for Children International 
 								(2008)</li>
 						</a>
 							<li id="l8">Moved back to NJ</li>
 						<a href="images/mypath_photo3.jpg" data-lightbox="7">
-							<li id="l9">Started College (2009)</li>
+							<li id="l9" class="highlight">Started College (2009)</li>
 						</a>
 						<a href="images/mypath_photo6.jpg" data-lightbox="8">
-							<li id="l10">Left College</li>
+							<li id="l10" class="highlight">Left College</li>
 						</a>
 						<a href="images/mypath_photo7.jpg" data-lightbox="9">
-							<li id="l11">Began Learning Web Design & Front-End Development</li>
+							<li id="l11" class="highlight">Began Learning Web Design & Front-End Development</li>
 						</a>
 						<a href="images/mypath_photo10.jpg" data-lightbox="10">
-							<li id="l12">Learning JavaScript and its libraries (Now)</li>
+							<li id="l12" class="highlight">Learning JavaScript and its libraries (Now)</li>
 						</a>
 					</div>
 				</ul>
@@ -95,35 +64,30 @@
 				<img src="images/about_workflow.png" id="workflow_title">
 				<div class="workflow_header" style="color:#FFFF93">Plan</div>
 				<div class="workflow_content">
-					This phase is arguably the most critical step. Here is where my team and I begin the process of conceptualizing a product or service. We discuss and evaluate cost (for things like marketing, services, etc.) along with future deadlines and release dates. We briefly overview the different phases along the development cycle as well as assess the technologies that will be necessary to work most efficiently towards deployment.
+					To start off, the team and I begin the process of conceptualizing a product or service. We evaluate cost (for things like marketing, technology usage, etc.) and discuss future deadlines and cycle release dates. Finally, we overview and assess the technologies that will be necessary to work most efficiently towards deployment.
 				</div>
 
 				<div class="workflow_header" style="color:#FF4B43">Design</div>
 				<div class="workflow_content">
-					For myself this phase is crucial. Here is where the abstract begins to take shape. This is an iterative process that involves turning organized notes into the final draft of a sketch. From there I do research for creative inspiration and to gain a sense of direction in terms of possibilities for the product's interface. Afterwards I take our sketches and, combined with concepts from my research, design some wireframes and subsequently begin the process of rapid prototyping (design). Finally the team analyzes and makes any necessary design changes to the prototype before beginning the process of development.
+					Here is where our abstract ideas become more concrete. The process involves turning organized notes into the final draft of a sketch. From there I do research for creative inspiration to gain a sense of direction for the product's overall design. I then take our sketches along with researched concepts and create a wireframe for the product's interface. Subsequently, I begin the process of rapid prototyping. Finally, the team analyzes and suggests any design changes that could help improve the product before it goes into development.
 				</div>
 
 				<div class="workflow_header" style="color:#FF2B06">Develop</div>
 				<div class="workflow_content">
-					At this stage things get very technical. I put aside all of the design plans and begin along the backend within an MVC environment. I organize and outline all of the resources (routes, controllers, models, views, db column names, etc.) that will be necessary to eventually create a software prototype. Afterwards I begin writing high level tests using Rspec (with the design plans as a basis for those tests) followed by an iteration of the code that passes the tests until a particular feature is in place (such as a user signin/login feature). Once the base of the backend is in order I begin implementing and coding the design for the application's user interface while working in-house to test for user experience. The overall procedure is one that's about 70% technical and 30% non-technical involving brief team meetings and discussions regarding potential conceptual and design changes. Using this Agile-like approach I must work in an adaptive and flexible manner with the ability to rapidly respond to modification requests. 
+					At this stage, I put aside all design plans and begin working along the backend. I organize and outline all of the entities and resources of the product, using a UML-like format, that will be necessary to eventually create a software prototype. From there, I begin writing high level tests using Rspec followed by an iteration of the code that passes the tests until a particular feature is in place. Once a rough base of the backend is in order, I begin implementing the design for the product's interface while working in-house to test for user experience. The overall procedure is one that's about 70% technical and 30% non-technical involving brief team meetings and discussions regarding potential conceptual and design changes. Using this Agile-like approach I must work in an adaptive and flexible manner with the ability to rapidly respond to modification requests. 
 				</div>
 
 				<div class="workflow_header" style="color:#C50000">Launch</div>
 				<div class="workflow_content">
-					Here is where all of the work pays off! The point in which marketing meets product as we approach the finish line towards deployment. Before doing so I give all of my tests one last go round (as a sanity check). Next I'll make the necessary adjustments to my code's configuration plus add any gems that will be used within the production environment (such as paperclip and postgreSQL). Finally I will deploy the code to a production server with a slow release to the public for user feedback to help improve the product or service within its early stages. Beyond this point, I will work to maintain and potentially improve the application over time based on company requests for either the life of the application or until another developer takes over the project.
+					This is where all of the work pays off! The point in which marketing meets product as we approach the finish line towards deployment. Before doing so, I'll make the necessary adjustments to the app's configuration setup and add any gems that will be used within the production environment (such as paperclip and postgreSQL). Finally, I will deploy the code to production to be run and user tested in Beta for user feedback to help improve the product or service within its early stages. Beyond this point, I will work to maintain and iteratively improve the product over time upon company requests.
 				</div>
 			</div>
 		<!-- BODY -->
 		<!-- FOOTER -->
-		<div id="footer">
-      <div class="container">
-        <div id="sig">Developed & Designed By Tyquan E. Kelly</div>
-        <img id="footer_logo" src="images/adnt_logo.png">
-      </div>
-    </div>
+		<div id="included_footer_file">Tyquan Kelly</div>
 		<!-- FOOTER -->
 		<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="js/mobile_nav.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/header_footer.js"></script>
 	</body>
 </html>
