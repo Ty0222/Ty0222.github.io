@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Tyquan E. Kelly</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/layout_frame.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/project_blueprint.css">
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div id="included_header_file"></div>
+    <!-- HEADER -->
+
+    <!-- BODY -->
+    <img src="images/work_blueprint_covered.jpg" class="project_body_bg">
+    <div class="black_trans_bg">
+      <div id="intro_container">
+        <div id="intro_title">
+          My Blueprint
+          <div id="intro_content">
+            My Blueprint is a productivity app designed to simplify and improve the process of accomplishing large tasks and goals. As a developer/designer and the technical lead, I was responsible for bringing to life Realitiy's first software product. I created sketches/wireframes outlining the app's user-centered interface, and I handled both the front and back-end development responsibilities. I also helped in finalizing the technical requirements and foundational concepts of the app.
+          </div>
+        </div>
+        <div id="site_view_container">
+          <a href="http://myblueprint.io">
+            <div class="svbg_clr"></div>
+            <div id="site_view">
+              <p>View App</p>
+            </div>
+          </a>
+        </div>
+        <div id="intro_photo_container">
+          <img src="images/project_blueprint_1.png" id="intro_photo">
+        </div>
+      </div>
+    </div>
+
+    <div class="skyblue_bg">
+      <div class="project_container">
+        <div id="wireframe_title">
+          <p>Wireframes</p>
+        </div>  
+        <div id="wireframe_container">
+          <img src="images/project_blueprint_wireframe1.png" id="wireframe1">
+          <img src="images/project_blueprint_wireframe2.png" id="wireframe2">
+          <img src="images/project_blueprint_wireframe3.png" id="wireframe3">
+        </div>
+      </div>
+    </div>
+
+    <div class="white_bg">
+      <img src="images/project_bg_analysis.png" id="analysis_man">
+      <div id="analysis_intro_title">
+        <p>Site Analysis</p>
+      </div>
+      <div id="analysis_intro_container">
+        <div id="analysis_content_title_intro">
+          <p>Your Blueprint</p>
+        </div>
+        <div id="analysis_content_intro">
+          <p>
+            An important part of My Blueprint, from a user experience standpoint, is the displaying of a user's current goal scaled all the way down to the current month's task to be completed. We wanted users to always have an overview of their progress coupled with feedback pertaining to each task. We also streamlined users' progress towards a goal through the ability to complete tasks from their blueprint pages along with their home one.
+          </p>
+        </div>
+        <img src="images/project_blueprint_analysis1.png" id="analysis_intro_photo" class="blueprint_photo">
+      </div>
+    </div>
+
+    <div class="black_trans_bg">
+      <div class="project_container">
+        <div class="analysis_content_title">
+          <p>Welcome Home</p>
+        </div>
+        <div class="analysis_content">
+          <p>
+            Created to be used as a hub, this page contains everything a user may need to go forth along their journey towards accomplishing a goal. A core feature here is our custom-built "task manager". As shown within the interface, it provides feedback regarding one's progress towards the completion of a given task and offers a recommended number of tasks to complete depending on the goal. It also prioritizes and focuses on users' most important tasks, making sure they are completed by their respective due dates.
+          </p>
+        </div>
+        <img src="images/project_blueprint_analysis2.png" class="analysis_photo_big profile_photo">
+
+        <div class="analysis_content_title">
+          <p>The Task Manager</p>
+        </div>
+        <div class="analysis_content">
+          <p>
+            This use case for our task manager involves presenting a user's most important task at the moment. I opted to create and use a service object named <span class="code_highlight code_poro">PresentTask</span> to be responsible for this job. A key part here is the existence of the <span class="code_highlight code_method">next_major_task</span> method, which always returns the nearest major task that has yet to be completed. It does this using the <span class="code_highlight code_method">inject</span> method on our queried collection of uncompleted major milestones comparing each's due date attribute (including our goal object passed in as an argument) until it finds the closest one to today's date. As can be seen below, all of our use cases contain a similar interface (i.e. <span class="code_highlight code_method">perform</span> method) for easy identification via our <span class="code_highlight code_module">UseCase</span> module.
+          </p>
+        </div>
+        <img src="images/project_blueprint_csample1.png" class="code_sample csamp_first csamp_margin_lg">
+        <img src="images/project_blueprint_csample2.png" class="code_sample">
+
+        <div class="analysis_content content_without_title">
+          <p>
+            Our task manager also tracks the time it takes to complete a given task. Based upon the type of task (major vs miniature), the manager can terminate users' progress towards their goals. To handle this responsibility I created a policy object named <span class="code_highlight code_poro">TerminateProgressPolicy</span> that determines the conditions upon which a task is to be terminated. With the use of duck typing, our policy object functions agnostically when dealing with either a goal or milestone.
+          </p>
+        </div>
+
+        <img src="images/project_blueprint_csample3.png" class="code_sample csamp_first csamp_margin_sm">
+        <img src="images/project_blueprint_csample4.png" class="code_sample">
+    
+        <div class="analysis_content_title">
+          <p>Assisting the User</p>
+        </div>
+        <div class="analysis_content">
+          <p>
+            A large part of My Blueprint involves creating tasks and setting up a "blueprint" from which to work on and accomplish a goal. In an attempt to simplify this process, we added card elements or simply "cards" with tips on each form page. These tips aid in helping users better format their tasks, and contain important info regarding each type including its purpose within a blueprint. Our forms also contain helpful info for when users create invalid tasks.
+          </p>
+        </div>
+        <img src="images/project_blueprint_analysis3.png" class="analysis_photo_big user_form_photo">
+
+        <div class="analysis_content_title">
+          <p>Ordering Blueprints</p>
+        </div>
+        <div class="analysis_content">
+          <p>
+            This use case deals with intelligently presetting users' due dates according to their proper place within a blueprint. This context object (used alongside a specific class/type of object) named <span class="code_highlight code_poro">AutoSelectDueDate</span> involves two states: a predetermined default date and an adjusted version for when users are near an upcoming major task. This eases the decison making for users by allowing them to simply focus on their plan of attack.
+          </p>
+        </div>
+        <img src="images/project_blueprint_csample5.png" class="code_sample csamp_first csamp_margin_sm">
+        <img src="images/project_blueprint_csample6.png" class="code_sample">
+        <img src="images/project_blueprint_csample7.png" class="code_sample">
+
+        <div class="analysis_content content_without_title">
+          <p>
+            Provided the conventional Rails' options for validations, many of our app's features would unfortunately be rendered useless. For instance, having current tasks with due dates that surpass the start date of certain future ones make it impossible for our task manager system to accurately detect where a user is along a given track. To solve this problem I created custom validations for the due date attribute that would allow for the integrity of our app's data and feature set to be upheld.
+          </p>
+        </div>
+        <img src="images/project_blueprint_csample8.png" class="code_sample csamp_first csamp_margin_sm">
+
+        <div class="analysis_content_title">
+          <p>Staying Consistent</p>
+        </div>
+        <div class="analysis_content">
+          <p>
+            With the aim of providing a consistent UI, I took on the challenge of creating a custom file upload button. We gave the it a slightly different appearance from the other form fields by excluding the insetted shadowing to give it a more raised traditional button feel. We gave it the same helper icon treatment as with all of the fields and kept the same feedback text pertaining to which file has been chosen if any. In wanting to enhance the button we decided to add a "remove profile photo" option that becomes available once users have uploaded one for their profile. When using this added functionality an AJAX request is sent and their photo is seemlessly removed.
+          </p>
+        </div>
+        <img src="images/project_blueprint_analysis4.png" class="analysis_photo_big signup_form">
+
+        <div class="analysis_content_title">
+          <p>File Upload Button</p>
+        </div>
+        <div class="analysis_content">
+          <p>
+            In customizing the file upload button, I focused on two tasks. First, maintaining the presence of the original button (needs to exist in the DOM without being visible). Second, have our new button mimic the text feedback functionality for when a file is chosen. The first task was accomplished by lowering the opacity of the targeted field to 0 rendering it invisible to users. I also expanded its porportions to 100% the width and height of its applicable ascendants. This all allows our new button's styling to exist in place with the original one layered over top.
+          </p>
+        </div>
+        <img src="images/project_blueprint_csample9.png" class="code_sample csamp_first csamp_margin_med">
+        <img src="images/project_blueprint_csample10.png" class="code_sample">
+        <div class="analysis_content content_without_title">
+          <p>
+            To mimic the text feedback feature, I combined JavaScript and Regex. First, I removed the "fakepath" path name provided by the original button when users choose a file and stored the remaining path in the <span class="code_highlight code_variable">filename</span> variable. I then captured a truncated version of <span class="code_highlight code_variable">filename</span> that mimics the format of the original text feedback feature. Afterwards, I captured the appropriate filename extension that will later be appended to our <span class="code_highlight code_variable">truncated_filename</span> variable. Finally, I replaced the default text for the new button with our truncated filename giving users the same helpful functionality they're used to.
+          </p>
+        </div>
+        <img src="images/project_blueprint_csample11.png" class="code_sample csamp_first csamp_margin_med">
+      </div>
+    </div>
+
+    <!-- BODY -->
+
+    <!-- FOOTER -->
+    <div id="included_footer_file">Tyquan Kelly</div>
+		<!-- FOOTER -->
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/header_footer.js"></script>
+  </body>
+</html>
