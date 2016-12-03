@@ -9,60 +9,48 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div id="header">
-      <img src="images/blur_header.png" id="blur_header">
-      <div class="container">
-        <a href="index.html">
-          <img src="images/site_header_name_lg.png" id="site_header_name">
-        </a>
-        <img src="images/mobile_nav_button.png" class="mobile_nav_button">
-        <div id="nav">
-          <a href="index.html">
-            <div id="nav_home">Home</div>
-          </a>
-          <a href="work.html">
-            <div id="nav_work">Work</div>
-          </a>
-          <a href="about.html">
-            <div id="nav_about">About Me</div>
-          </a>
-          <a href="blog.html">
-            <div id="nav_blog">Blog</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div id="mobile_nav_container">
-      <ul id="mobile_nav">
-        <a href="index.html"><li>Home</li></a>
-        <a href="work.html"><li>Work</li></a>
-        <a href="about.html"><li>About Me</li></a>
-        <a href="blog.html"><li>Blog</li></a>
-      </ul>
-    </div>
+    <div id="included_header_file"></div>
     <!-- HEADER -->
     <!-- BILLBOARD -->
     <div id="billboard">
       <div class="container">
         <img src="images/billboard_photo_lg.png" id="billboard_photo_frame">
         <div id="billboard_skills">
-          <img src="images/billboard_technologies_lg.png" id="billboard_tech">
-          <div class="clear"></div>
-          <img src="images/billboard_tools_lg.png" id="billboard_tools">
-          <div class="clear"></div>
-          <img src="images/billboard_concepts_lg.png" id="billboard_concepts">
-        </div>
-        <div class="clear"></div>
-        <div id="mobile_phone_billboard_skills">
-          <img src="images/billboard_technologies_med1.png">
-          <img src="images/billboard_technologies_med2.png">
-          <img src="images/billboard_technologies_med3.png" style="margin-bottom: 50px;">
-          <img src="images/billboard_tools_med1.png">
-          <img src="images/billboard_tools_med2.png" style="margin-bottom: 50px;">
-          <img src="images/billboard_concepts_med1.png">
-          <img src="images/billboard_concepts_med2.png">
-          <img src="images/billboard_concepts_med3.png">
+          <div class="box_container">
+            <div class="billboard_box_title">Technologies</div>
+            <span class="billboard_boxes"><p>Ruby</p></span>
+            <span class="billboard_boxes"><p>Rails</p></span>
+            <span class="billboard_boxes"><p>HTML5</p></span>
+            <span class="billboard_boxes"><p>CSS3</p></span>
+            <span class="billboard_boxes"><p>JavaScript</p></span>
+            <span class="billboard_boxes"><p>jQuery</p></span>
+            <span class="billboard_boxes"><p>Rspec</p></span>
+            <span class="billboard_boxes"><p>Capybara</p></span>
+            <span class="billboard_boxes"><p>SQL</p></span>
+            <span class="billboard_boxes"><p>Postgres</p></span>
+          </div>
+          <div class="box_container">
+            <div class="billboard_box_title">Tools</div>
+            <span class="billboard_boxes"><p>Git</p></span>
+            <span class="billboard_boxes"><p>Github</p></span>
+            <span class="billboard_boxes"><p>Fireworks</p></span>
+            <span class="billboard_boxes"><p>Wordpress</p></span>
+            <span class="billboard_boxes"><p>Heroku</p></span>
+            <span class="billboard_boxes"><p>Sublime</p></span>
+          </div>
+          <div class="box_container">
+            <div class="billboard_box_title">Concepts</div>
+            <span class="billboard_boxes"><p>UI/UX</p></span>
+            <span class="billboard_boxes"><p>OOP</p></span>
+            <span class="billboard_boxes"><p>MVC</p></span>
+            <span class="billboard_boxes"><p>DOM</p></span>
+            <span class="billboard_boxes"><p>Wireframes</p></span>
+            <span class="billboard_boxes"><p>Prototyping</p></span>
+            <span class="billboard_boxes">
+              <p style="font-size:14px">Graphic Design</p>
+            </span>
+            <span class="billboard_boxes"><p>Agile</p></span>
+          </div>
         </div>
         <div class="clear"></div>
       </div>
@@ -82,12 +70,17 @@
           <div id="contact_form_header">
             I would be happy to answer any questions you may have.
           </div>
-          <div id="contact_form">
-            <input class="text_field" type="text" placeholder="Name">
-            <input class="text_field" type="email" placeholder="Email">
-            <textarea id="text_area" placeholder="Your message"></textarea>
-            <input id="btn_submit" type="submit" value="SUBMIT">
-          </div>
+          <form enctype="multipart/form-data" method="post" action="http://www.freedback.com/mail.php" accept-charset="UTF-8" id="contact_form">
+            <div>
+              <input type="hidden" name="acctid" id="acctid" value="n617r132u97flbz5" />
+              <input type="hidden" name="formid" id="formid" value="1293598" />
+              <input type="hidden" name="required_vars" id="required_vars" value="name,email" />
+            </div>
+            <input class="text_field" type="text" name="name" id="name" placeholder="Name:">
+            <input class="text_field" type="email" name="email" id="email" placeholder="Email:">
+            <textarea name="field-d304646f09115ec" id="field-d304646f09115ec" class="text_area" placeholder="Message: (extend this area with tag in lower right corner)"></textarea>
+            <input id="btn_submit" type="submit" value="SUBMIT" >
+          </form>
         </div>
       </div>
       <div class="clear"></div>
@@ -105,14 +98,9 @@
     </div>
     <!-- BILLBOARD -->
     <!-- FOOTER -->
-    <div id="footer">
-      <div class="container">
-        <div id="sig">Developed & Designed By Tyquan E. Kelly</div>
-        <img id="footer_logo" src="images/adnt_logo.png">
-      </div>
-    </div>
+    <div id="included_footer_file">Tyquan Kelly</div>
     <!-- FOOTER -->
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="js/mobile_nav.js"></script>
+    <script src="js/header_footer.js"></script>
   </body>
 </html>
