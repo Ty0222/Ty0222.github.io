@@ -5,138 +5,110 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href="css/layout_frame.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/project_flixer.css">
 	</head>
 	<body>
 		<!-- HEADER -->
-		<div id="header">
-      <img src="images/blur_header.png" id="blur_header">
-      <div class="container">
-        <a href="index.html">
-          <img src="images/site_header_name_lg.png" id="site_header_name">
-        </a>
-        <img src="images/mobile_nav_button.png" class="mobile_nav_button">
-        <div id="nav">
-          <a href="index.html">
-            <div id="nav_home">Home</div>
-          </a>
-          <a href="work.html">
-            <div id="nav_work">Work</div>
-          </a>
-          <a href="about.html">
-            <div id="nav_about">About Me</div>
-          </a>
-          <a href="blog.html">
-            <div id="nav_blog">Blog</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div id="mobile_nav_container">
-      <ul id="mobile_nav">
-        <a href="index.html"><li>Home</li></a>
-        <a href="work.html"><li>Work</li></a>
-        <a href="about.html"><li>About Me</li></a>
-        <a href="blog.html"><li>Blog</li></a>
-      </ul>
-    </div>
+    <div id="included_header_file"></div>
     <!-- HEADER -->
+
     <!-- BODY -->
-    <div id="intro_container">
-      <div id="intro_title">
-        Flixer the Movie App
-        <div id="intro_content">
-          Flixer is a side project I created that was inspired by another beloved movie review application. The development of this project came about after spending several months getting comfortable within the Ruby on Rails framework. The process of building and enhancing this project has continued on as I've improved as a developer.
+    <img src="images/work_flixer_covered.jpg" class="project_body_bg">
+    <div class="black_trans_bg">
+      <div id="intro_container">
+        <div id="intro_title">
+          Flixer the Movie App
+          <div id="intro_content">
+            Flixer is a side project I created that was inspired by another beloved movie review application. The development of this project came about after spending several months getting comfortable within the Ruby on Rails framework. The process of building and enhancing this project has continued on as I've improved as a developer.
+          </div>
+        </div>
+        <div id="site_view_container">
+          <a href="http://flixer.herokuapp.com">
+            <div class="svbg_clr"></div>
+            <div id="site_view">
+              <p>View App</p>
+            </div>
+          </a>
+        </div>
+        <div id="intro_photo_container">
+          <img src="images/project_flixer.png" id="intro_photo">
         </div>
       </div>
-      <div id="site_view_container">
-        <a href="http://flixer.herokuapp.com">
-          <div class="svbg_clr"></div>
-          <div id="site_view">
-            <p>View App</p>
-          </div>
-        </a>
-      </div>
-      <div id="intro_photo_container">
-        <img src="images/project_flixer.png" id="intro_photo">
+    </div>
+
+    <div class="black_bg">
+      <div class="project_container">
+        <div id="wireframe_title">
+          <p>Wireframes</p>
+        </div>  
+        <div id="wireframe_container">
+          <img src="images/project_flixer_wireframe1.png" id="wireframe1">
+          <img src="images/project_flixer_wireframe2.png" id="wireframe2">
+          <img src="images/project_flixer_wireframe3.png" id="wireframe3">
+          <img src="images/project_flixer_wireframe4.png" id="wireframe4">
+        </div>
       </div>
     </div>
-    <div class="clear"></div>
-    <div id="wireframe_bg">
-      <div id="wireframe_title">
-        <p>Wireframes</p>
-      </div>  
-      <div id="wireframe_container">
-        <img src="images/project_flixer_wireframe1.png" id="wireframe1">
-        <img src="images/project_flixer_wireframe2.png" id="wireframe2">
-        <img src="images/project_flixer_wireframe3.png" id="wireframe3">
-        <img src="images/project_flixer_wireframe4.png" id="wireframe4">
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div id="analysis_bg1">
-      <div id="analysis_title1">
+
+    <div class="white_bg">
+      <img src="images/project_bg_analysis.png" id="analysis_man">
+      <div id="analysis_intro_title">
         <p>Site Analysis</p>
       </div>
-      <div id="analysis_container1">
-        <div id="content_title1">
+      <div id="analysis_intro_container">
+        <div id="analysis_content_title_intro">
           <p>Clean Cool Catalog</p>
         </div>
-        <div id="content1">
+        <div id="analysis_content_intro">
           <p>
             From the beginning in the designing of this project, I wanted the overall visuals of it to be "different" from traditional movie review and info applications. I began by containing and centering all of the important and relevant content which, unlike other similar apps, puts into focus where the user should be paying attention (as opposed to scattering the information). What's immediately obvious is the choice to go with a darker theme to backdrop all of the movies' content. I felt it added a "richness" to the app that was lacking when experimenting with a much lighter tone. Within the magnified area, I added a sizable 3D info button that glows when hovered over to help bring the app to life.
           </p>
         </div>
-        <img src="images/project_flixer_analysis1.png" id="home_photo">
+        <img src="images/project_flixer_analysis1.png" id="analysis_intro_photo" class="index_photo">
       </div>
     </div>
-    <div id="clear"></div>
-    <div id="analysis_bg2">
-      <div id="analysis_container2">
-        <div class="content_title_big">
-          <p>Information Immersion</p>
+    
+    <div class="black_trans_bg">
+      <div class="project_container">
+        <div class="analysis_content_title">
+          <p>Visual Immersion</p>
         </div>
-        <div class="content_big">
+        <div class="analysis_content">
           <p>
             Every movie within the app's catalog possesses a unique theme when viewing its individual info page. Whenever a site administrator uploads a poster for a newly added movie, the app dynamically generates the page's background by expanding and blurring the uploaded poster (as can be seen below). This was done to enhance the user's experience immersing said user into the page as he/she focuses on the centered content. As magnified below, a user has the option of "favoriting" a movie and viewing similar titles within the catalog by their shared genre (an admin can add, change, and delete genres for a movie).
           </p>
         </div>
-        <img src="images/project_flixer_analysis2.png" class="big_photo view_movie_photo">
+        <img src="images/project_flixer_analysis2.png" class="analysis_photo_big view_movie_photo">
         
-        <div class="content_title_big">
+        <div class="analysis_content_title">
           <p>Administrative Duty</p>
         </div>
-        <div class="content_big">
+        <div class="analysis_content">
           <p>
             Throughout the app, what can be seen on a given page differs depending on a user's privileges. The example below shows a listing of every genre within the Flixer's database including an edit and delete option. The interface for non-admin users do not show the two latter options (edit and delete). I've gone ahead and color-coded the edit and delete options displaying red as a way to signal a permanent action (along with a Javascript confirmation pop-up). Also along the side menu, admins will find they have more page-specific options (dynamically contextualized content) then non-admins to task such as adding a new movie or genre to the database.
           </p>
         </div>
-        <img src="images/project_flixer_analysis3.png" class="big_photo genres_photo">
+        <img src="images/project_flixer_analysis3.png" class="analysis_photo_big genres_photo">
 
-        <div class="content_title_big">
+        <div class="analysis_content_title">
           <p>Account Review</p>
         </div>
-        <div class="content_big">
+        <div class="analysis_content">
           <p>
             When users go to view their account, they will come across several sections displaying information regarding their activity within the Flixer app. This page may display a user's reviews for different movies, particularly favorited films, as well as general options giving all users the ability to modify their accounts.
           </p>
         </div>
-        <img src="images/project_flixer_analysis4.png" class="big_photo account_photo">
+        <img src="images/project_flixer_analysis4.png" class="analysis_photo_big account_photo">
       </div>
     </div>
-    <div class="clear"></div>
     <!-- BODY -->
+
     <!-- FOOTER -->
-    <div id="footer">
-      <div class="container">
-        <div id="sig">Developed & Designed By Tyquan E. Kelly</div>
-        <img id="footer_logo" src="images/adnt_logo.png">
-      </div>
-    </div>
+    <div id="included_footer_file">Tyquan Kelly</div>
 		<!-- FOOTER -->
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="js/mobile_nav.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/header_footer.js"></script>
   </body>
 </html>
