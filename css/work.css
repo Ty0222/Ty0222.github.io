@@ -1,293 +1,272 @@
+html {
+	height: 100%;
+}
 
 body {
-	background: #000;
+	height: 100%;
 }
 
-.work_container {
-	max-width: 925px;
+.project {
+	position: relative;
+	background-attachment: fixed;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: 50% 38px;
 	width: 100%;
-	margin: 0 auto 40px;
-	overflow: hidden;
+	height: 100%;
 }
 
-#work_preview_text_blueprint {
-	position: absolute;
-	z-index: 1;
-	margin: 375px 0 0 300px;
-	text-align: center;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 50px;
-	color: #CCCCCC;
-}
-
-#work_preview_text_flixer {
-	position: absolute;
-	z-index: 1;
-	margin: 375px 0 0 395px;
-	text-align: center;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 50px;
-	color: #CCCCCC;
-}
-
-#work_preview_text_realitiy {
-	position: absolute;
-	z-index: 1;
-	margin: 375px 0 0 37px;
-	text-align: center;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 50px;
-	color: #CCCCCC;
-}
-
-#work_preview_text_infiniti {
-	position: absolute;
-	z-index: 1;
-	margin: 375px 0 0 193px;
-	text-align: center;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 50px;
-	color: #CCCCCC;
-}
-
-#work_preview_text_wun {
-	position: absolute;
-	z-index: 1;
-	margin: 375px 0 0 20px;
-	text-align: center;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 50px;
-	color: #CCCCCC;
-}
-
-.work_preview {
-	display: block;
-	margin: 120px auto 0;
-	max-width: 925px;
-	width: 100%;
-	padding: 8px;
-	box-sizing: border-box;
-}
-
-.work_border {
-	border-radius: 5px;
-	border: 1px solid #FFF;
-}
-
-a:hover .work_preview {
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
-.glow_blueprint {
-	border-radius: 5px;
+.blueprint_covered {
+	background-image: url(../images/work_blueprint_covered.jpg);
 	transition: 2s;
 }
 
-a:hover .glow_blueprint {
-	box-shadow: 0 0 1px 10px #3863A0 inset;
+.blueprint {
+	background-image: url(../images/work_blueprint.jpg);
+	transition: 1.3s;
 }
 
-.glow_flixer {
-	border-radius: 5px;
+.flixer_covered {
+	background-image: url(../images/work_flixer_covered.jpg);
 	transition: 2s;
 }
 
-a:hover .glow_flixer {
-	box-shadow: 0 0 1px 10px #FFBF00 inset;
+.flixer {
+	background-image: url(../images/work_flixer.jpg);
+	transition: 1.3s;
 }
 
-.glow_realitiy {
-	border-radius: 5px;
+.realitiy_covered {
+	background-image: url(../images/work_realitiy_covered.jpg);
 	transition: 2s;
 }
 
-a:hover .glow_realitiy {
-	box-shadow: 0 0 1px 10px #60D700 inset;
+.realitiy {
+	background-image: url(../images/work_realitiy.jpg);
+	transition: 1.3s;
 }
 
-.glow_infiniti {
-	border-radius: 5px;
+.infiniti_covered {
+	background-image: url(../images/work_infiniti_covered.jpg);
 	transition: 2s;
 }
 
-a:hover .glow_infiniti {
-	box-shadow: 0 0 1px 10px #CDC6BD inset;
+.infiniti {
+	background-image: url(../images/work_infiniti.jpg);
+	transition: 1.3s;
 }
 
-.glow_wun {
-	border-radius: 5px;
+.wun_covered {
+	background-image: url(../images/work_wun_covered.jpg);
 	transition: 2s;
 }
 
-a:hover .glow_wun {
-	box-shadow: 0 0 1px 10px  #459FAA inset;
+.wun {
+	background-image: url(../images/work_wun.jpg);
+	transition: 1.3s;
 }
 
-@media only screen and (max-width: 960px) {
+.work_preview_text {
+	opacity: 0;
+	z-index: 99;
+	position: absolute;
+	bottom: 110px;
+	right: 0;
+	margin-right: 200px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 50px;
+	color: #DDD;
+	transition: 2s;
+}
 
-	#work_preview_text_blueprint {
-		margin-top: 43%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		font-size: 40px;
+.work_preview_text:hover {
+	transition: 1.3s;
+}
+
+.blueprint_text {
+	opacity: 1;
+}
+
+.blueprint_text:hover {
+	color: rgb(0,89,178);
+}
+
+.flixer_text:hover {
+	color: rgb(255,191,0);
+}
+
+.realitiy_text {
+	color: #000;
+}
+
+.realitiy_text:hover {
+	color: rgb(96,215,0);
+}
+
+.infiniti_text:hover {
+	color: rgb(155,155,140);
+}
+
+.wun_text:hover {
+	color: rgb(69,159,170);
+}
+
+.arrow_container {
+	position: relative;
+	width: 0;
+	height: 0;
+	right: 28.5px;
+	margin: 0 auto;
+}
+
+.arrow_up {
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 30px solid #FFF;
+}
+
+.arrow_down {
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid #FFF;
+}
+
+.arrow {
+	max-width: 100px;
+	z-index: 997;
+	position: fixed;
+	width: 0;
+	height: 0;
+	bottom: 10px;
+	margin: 0 auto;
+	transition: 1s;
+	webkit-animation-name: point_down;
+	webkit-animation-duration: 2.5s;
+	webkit-animation-timing-function: linear;
+	webkit-animation-iteration-count: infinite;
+	animation-name: point_down;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes point_down {
+	0% {bottom: 10px}
+	25% {bottom: 20px}
+	50% {bottom: 30px;}
+	75% {bottom: 20px}
+	100% {bottom: 10px}
+}
+
+@keyframes point_down {
+	0% {bottom: 10px}
+	25% {bottom: 20px}
+	50% {bottom: 30px;}
+	75% {bottom: 20px}
+	100% {bottom: 10px}
+}
+
+@media only screen and (min-width: 1366px) {
+
+	.project {
+		background-position: 50%;
 	}
 
-	#work_preview_text_flixer {
-		margin-top: 43%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		font-size: 40px;
-	}
-
-	#work_preview_text_realitiy {
-		margin-top: 43%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		font-size: 40px;
-	}
-
-	#work_preview_text_infiniti {
-		margin-top: 43%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		font-size: 40px;
-	}
-
-	#work_preview_text_wun {
-		margin-top: 43%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		font-size: 40px;
+	.work_preview_text {
+		bottom: 230px;
+		right: 0;
+		margin-right: 240px;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1600px) {
 
-	#work_preview_text_blueprint {
-		margin-top: 47%;
-		font-size: 25px;
+	.project {
+		background-position: 50%;
 	}
 
-	#work_preview_text_flixer {
-		margin-top: 47%;
-		font-size: 25px;
-	}
-
-	#work_preview_text_realitiy {
-		margin-top: 47%;
-		font-size: 25px;
-	}
-
-	#work_preview_text_infiniti {
-		margin-top: 47%;
-		font-size: 25px;
-	}
-
-	#work_preview_text_wun {
-		margin-top: 47%;
-		font-size: 25px;
+	.work_preview_text {
+		bottom: 260px;
+		right: 0;
+		margin-right: 360px;
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
 
-	#work_preview_text_blueprint {
-		margin-top: 59%;
+	.project {
+		background-position: 50% 40%;
 	}
 
-	#work_preview_text_flixer {
-		margin-top: 59%;
-	}
-
-	#work_preview_text_realitiy {
-		margin-top: 57%;
-	}
-
-	#work_preview_text_infiniti {
-		margin-top: 57%;
-	}
-
-	#work_preview_text_wun {
-		margin-top: 57%;
+	.work_preview_text {
+		bottom: 120px;
+		right: 0;
+		margin-right: 70px;
 	}
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 768px) {
 
-	#work_preview_text_blueprint {
-		margin-top: 57%;
+	.project {
+		background-position: 50%;
 	}
 
-	#work_preview_text_flixer {
-		margin-top: 57%;
+	.work_preview_text {
+		bottom: 230px;
+		right: 0;
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+
+	.project {
+		background-position: 50% 43%;
 	}
 
-	#work_preview_text_realitiy {
-		margin-top: 55%;
+	.work_preview_text {
+		opacity: 0;
+		top: 17px;
+		left: 10px;
+		height: 30px;
+		width: 275px;
+		margin-right: 0;
+		font-size: 32px;
 	}
 
-	#work_preview_text_infiniti {
-		margin-top: 57%;
+	.blueprint_text {
+		opacity: 1;
+		color: rgb(0,89,178);
 	}
 
-	#work_preview_text_wun {
-		margin-top: 55%;
+	.flixer_text {
+		color: rgb(255,191,0);
+	}
+
+	.realitiy_text {
+		color: rgb(96,215,0);
+	}
+
+	.infiniti_text {
+		color: rgb(155,155,140);
+	}
+
+	.wun_text {
+		color: rgb(69,159,170);
 	}
 }
 
 @media only screen and (max-width: 375px) {
 
-	#work_preview_text_blueprint {
-		margin-top: 60%;
-	}
-
-	#work_preview_text_flixer {
-		margin-top: 60%;
-	}
-
-	#work_preview_text_realitiy {
-		margin-top: 57%;
-		font-size: 26px;
-	}
-
-	#work_preview_text_infiniti {
-		margin-top: 59%;
-	}
-
-	#work_preview_text_wun {
-		margin-top: 57%;
+	.project {
+		background-position: 50% 80%;
 	}
 }
 
 @media only screen and (max-width: 320px) {
 
-	#work_preview_text_blueprint {
-		margin-top: 65%;
-	}
-
-	#work_preview_text_flixer {
-		margin-top: 65%;
-	}
-
-	#work_preview_text_realitiy {
-		margin-top: 60%;
-		font-size: 26px;
-	}
-
-	#work_preview_text_infiniti {
-		margin-top: 64%;
-	}
-
-	#work_preview_text_wun {
-		margin-top: 63%;
+	.work_preview_text {
+		top: 27px;
+		font-size: 25px;
 	}
 }
