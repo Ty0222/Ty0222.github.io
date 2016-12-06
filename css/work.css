@@ -4,6 +4,7 @@ html {
 
 body {
 	height: 100%;
+	webkit-
 }
 
 .project {
@@ -22,6 +23,7 @@ body {
 }
 
 .blueprint {
+	z-index: 1;
 	background-image: url(../images/work_blueprint.jpg);
 	transition: 1.3s;
 }
@@ -32,6 +34,7 @@ body {
 }
 
 .flixer {
+	z-index: 1;
 	background-image: url(../images/work_flixer.jpg);
 	transition: 1.3s;
 }
@@ -42,6 +45,7 @@ body {
 }
 
 .realitiy {
+	z-index: 1;
 	background-image: url(../images/work_realitiy.jpg);
 	transition: 1.3s;
 }
@@ -52,6 +56,7 @@ body {
 }
 
 .infiniti {
+	z-index: 1;
 	background-image: url(../images/work_infiniti.jpg);
 	transition: 1.3s;
 }
@@ -62,6 +67,7 @@ body {
 }
 
 .wun {
+	z-index: 1;
 	background-image: url(../images/work_wun.jpg);
 	transition: 1.3s;
 }
