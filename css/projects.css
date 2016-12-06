@@ -20,6 +20,24 @@ html, body {
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
   -webkit-transform: translate3d(0, 0, 0);
+  webkit-animation-name: bg_zoom;
+  webkit-animation-duration: 30s;
+  webkit-animation-timing-function: linear;
+  webkit-animation-fill-mode: forwards;
+  animation-name: bg_zoom;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bg_zoom {
+	0% {-webkit-transform: scale(1);}
+	100% {-webkit-transform: scale(1.3);}
+}
+
+@keyframes bg_zoom {
+	0% {-webkit-transform: scale(1);}
+	100% {-webkit-transform: scale(1.3);}
 }
 
 .black_trans_bg {
