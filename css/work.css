@@ -21,60 +21,70 @@ body {
 	background-image: url(../images/work_blueprint_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translateZ(0);
 }
 
 .blueprint {
 	background-image: url(../images/work_blueprint.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: scale(1);
 }
 
 .flixer_covered {
 	background-image: url(../images/work_flixer_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translateZ(0);
 }
 
 .flixer {
 	background-image: url(../images/work_flixer.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: scale(1);
 }
 
 .realitiy_covered {
 	background-image: url(../images/work_realitiy_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translateZ(0);
 }
 
 .realitiy {
 	background-image: url(../images/work_realitiy.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: scale(1);
 }
 
 .infiniti_covered {
 	background-image: url(../images/work_infiniti_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translateZ(0);
 }
 
 .infiniti {
 	background-image: url(../images/work_infiniti.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: scale(1);
 }
 
 .wun_covered {
 	background-image: url(../images/work_wun_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translateZ(0);
 }
 
 .wun {
 	background-image: url(../images/work_wun.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: scale(1);
 }
 
 .work_preview_text {
