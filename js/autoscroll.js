@@ -51,8 +51,11 @@ jQuery(document).ready(function($){
 
 	    	i--;
 
-	    	// Autoscroll to next project
-	    	$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+	    	if ( bowser.name == "Safari" )
+	    	{
+	    		// Autoscroll to next project
+	    		$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+	    	}
 
 	    	// Fade in project title text
 	    	$(projects[i]).children(".work_preview_text").animate({"opacity":"1"}, 1600);
@@ -69,8 +72,11 @@ jQuery(document).ready(function($){
 
 	    		i++;
 
-	    		// Autoscroll to next project
-	    		$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+	    		if ( bowser.name == "Safari" )
+	    		{
+	    			// Autoscroll to next project
+	    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+	    		}
 
 	    		// Fade in project title text
 	    		$(projects[i]).children(".work_preview_text").animate({"opacity":"1"}, 1600);
@@ -149,14 +155,22 @@ jQuery(document).ready(function($){
     }
 	});
 	
-	//toggles toggle_class for target_class when hovering over hover_class
+	//toggles toggle_class's bg image for target_class when hovering over hover_class
 	function indirectToggleClass(hover_class, target_class, toggle_class){
+		const ORIGINAL_BG = $("." + target_class).css("background-image");
+
 		$("." + hover_class).on("mouseenter", function(){
-			$("." + target_class).addClass(toggle_class);
+			$("." + target_class).css({
+				"background-image": $("." + toggle_class).css("background-image"),
+				"-webkit-transform": "scale(1.01)"
+			});
 		});
 
 		$("." + hover_class).on("mouseout", function(){
-			$("." + target_class).removeClass(toggle_class);
+			$("." + target_class).css({
+				"background-image": ORIGINAL_BG,
+				"-webkit-transform": "scale(1)"
+			});
 		});
 	}
 	
