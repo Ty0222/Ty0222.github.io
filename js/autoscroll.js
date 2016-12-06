@@ -44,15 +44,15 @@ jQuery(document).ready(function($){
 			// Scrolling up & not at top of document
 	    if ( projects[i-1] && scrollingUp(e) )
 	    {
-	    	// Hide all project titles
-	    	$(".work_preview_text").each(function(){
-	    		$(this).css("opacity","0");
-	    	});
-
 	    	i--;
 
 	    	if ( bowser.name == "Safari" )
 	    	{
+	    		// Hide all project titles
+		    	$(".work_preview_text").each(function(){
+		    		$(this).css("opacity","0");
+		    	});
+
 	    		// Autoscroll to next project
 	    		$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
 	    	}
@@ -65,15 +65,16 @@ jQuery(document).ready(function($){
 	    {
 	    	if ( projects[i+1] )
 	    	{
-	    		// Hide all project titles
-	    		$(".work_preview_text").each(function(){
-	    			$(this).css("opacity","0");
-	    		});
 
 	    		i++;
 
 	    		if ( bowser.name == "Safari" )
 	    		{
+	    			// Hide all project titles
+		    		$(".work_preview_text").each(function(){
+		    			$(this).css("opacity","0");
+		    		});
+		    		
 	    			// Autoscroll to next project
 	    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
 	    		}
