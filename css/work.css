@@ -4,7 +4,6 @@ html {
 
 body {
 	height: 100%;
-	webkit-
 }
 
 .project {
@@ -15,6 +14,7 @@ body {
 	background-position: 50% 38px;
 	width: 100%;
 	height: 100%;
+	-webkit-transform: translate3d(0, 0, 0);
 }
 
 .blueprint_covered {
@@ -28,7 +28,7 @@ body {
 	background-image: url(../images/work_blueprint.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(1.01);
 }
 
 .flixer_covered {
@@ -42,7 +42,7 @@ body {
 	background-image: url(../images/work_flixer.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(1.01);
 }
 
 .realitiy_covered {
@@ -56,7 +56,7 @@ body {
 	background-image: url(../images/work_realitiy.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(1.01);
 }
 
 .infiniti_covered {
@@ -70,7 +70,7 @@ body {
 	background-image: url(../images/work_infiniti.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(1.01);
 }
 
 .wun_covered {
@@ -84,7 +84,7 @@ body {
 	background-image: url(../images/work_wun.jpg);
 	transition: 1.3s;
 	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(1.01);
 }
 
 .work_preview_text {
