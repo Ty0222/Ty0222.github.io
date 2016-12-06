@@ -1,3 +1,7 @@
+.blueprint_bg {
+	background-image: url(../images/work_blueprint_covered.jpg);
+}
+
 .skyblue_bg {
 	position: relative;
 	background: #BFDFFF;
@@ -6,7 +10,7 @@
 
 .svbg_clr { 
 	display: none;
-	background-color: rgba(191, 223, 255, 0.4);
+	background-color: rgba(0,89,178,0.4);
 }
 
 #site_view {
@@ -14,7 +18,7 @@
 }
 
 a:hover #site_view {
-	background-color: #BFDFFF;
+	background-color: #0059B2;
 }
 
 .blueprint_photo {

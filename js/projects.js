@@ -18,6 +18,10 @@ jQuery(document).ready(function($) {
 		return $(obj).offset().top;
 	}
 
+	function bottomOfObject(obj) {
+		return $(obj).offset().top + $(obj).outerHeight();
+	}
+
 	//all project pages
 	if ( pageIs(/project_/) )
 	{
