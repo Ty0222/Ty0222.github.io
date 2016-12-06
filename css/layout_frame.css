@@ -11,7 +11,7 @@
 /* HEADER */
 
 #site_header_name {
-    z-index: 100;
+    z-index: 1001;
     position: fixed;
     top: 10px;
     right: 36px;
@@ -20,7 +20,7 @@
 }
 
 #site_header_ruby {
-    z-index: 100;
+    z-index: 1001;
     position: fixed;
     top: 550px;
     right: 92.5px;
@@ -29,7 +29,9 @@
 }
 
 .mobile_nav_button {
-    z-index: 99;
+    z-index: 1000;
+    background-image: url(../images/mobile_nav_button_white.png);
+    background-size: cover;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -38,9 +40,18 @@
     cursor: pointer;
 }
 
+.mobile_nav_button:hover {
+    background-image: url(../images/mobile_nav_button_red.png);
+}
+
+.mobile_nav_button_black {
+    background-image: url(../images/mobile_nav_button_black.png);
+    transition: 1.5s;
+}
+
 #nav {
     display: none;
-    z-index: 99;
+    z-index: 1000;
     background: rgba(0,0,0,.8);
     position: fixed;
     right: 0;
@@ -55,6 +66,7 @@ a {
 }
 
 .nav_tabs {
+    z-index: 1001;
     display: block;
     position: relative;
     top: 200px;
@@ -81,7 +93,9 @@ a {
 }
 
 #close_btn {
+    z-index: 1001;
     position: absolute;
+    height: 35px;
     bottom: 10px;
     left: 104px;
     right: 104px;
@@ -98,6 +112,7 @@ a {
 /* FOOTER */
 
 #footer {
+    z-index: 999;
     background: url(../images/site_footer_bg.jpg) repeat-x bottom;
     height: 78px;
 }
@@ -158,5 +173,12 @@ a {
 
     #sig {
         float: none;        
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #site_header_ruby {
+        top: 475px;
     }
 }
