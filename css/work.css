@@ -20,56 +20,61 @@ body {
 .blueprint_covered {
 	background-image: url(../images/work_blueprint_covered.jpg);
 	transition: 2s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .blueprint {
-	z-index: 1;
 	background-image: url(../images/work_blueprint.jpg);
 	transition: 1.3s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .flixer_covered {
 	background-image: url(../images/work_flixer_covered.jpg);
 	transition: 2s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .flixer {
-	z-index: 1;
 	background-image: url(../images/work_flixer.jpg);
 	transition: 1.3s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .realitiy_covered {
 	background-image: url(../images/work_realitiy_covered.jpg);
 	transition: 2s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .realitiy {
-	z-index: 1;
 	background-image: url(../images/work_realitiy.jpg);
 	transition: 1.3s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .infiniti_covered {
 	background-image: url(../images/work_infiniti_covered.jpg);
 	transition: 2s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .infiniti {
-	z-index: 1;
 	background-image: url(../images/work_infiniti.jpg);
 	transition: 1.3s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .wun_covered {
 	background-image: url(../images/work_wun_covered.jpg);
 	transition: 2s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .wun {
-	z-index: 1;
 	background-image: url(../images/work_wun.jpg);
 	transition: 1.3s;
+	-webkit-transform: translate3d(0, 0, 0)
 }
 
 .work_preview_text {
