@@ -35,7 +35,7 @@ body, html {
 
 .mobile_nav_button {
     z-index: 1000;
-    background-image: url(../images/mobile_nav_button_white.png);
+    background-image: url(../images/layout/mobile_nav_button_white.png);
     background-size: cover;
     position: fixed;
     top: 20px;
@@ -46,11 +46,11 @@ body, html {
 }
 
 .mobile_nav_button:hover {
-    background-image: url(../images/mobile_nav_button_red.png);
+    background-image: url(../images/layout/mobile_nav_button_red.png);
 }
 
 .mobile_nav_button_black {
-    background-image: url(../images/mobile_nav_button_black.png);
+    background-image: url(../images/layout/mobile_nav_button_black.png);
     transition: 1.5s;
 }
 
@@ -118,7 +118,7 @@ a {
 
 #footer {
     z-index: 999;
-    background: url(../images/site_footer_bg.jpg) repeat-x bottom;
+    background: url(../images/layout/site_footer_bg.jpg) repeat-x bottom;
     height: 78px;
 }
 

@@ -17,58 +17,58 @@ body {
 }
 
 .blueprint_covered {
-	background-image: url(../images/work_blueprint_covered.jpg);
+	background-image: url(../images/work/work_blueprint_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-transform: translateZ(0);
 }
 
 .blueprint {
-	background-image: url(../images/work_blueprint.jpg);
+	background-image: url(../images/work/work_blueprint.jpg);
 }
 
 .flixer_covered {
-	background-image: url(../images/work_flixer_covered.jpg);
+	background-image: url(../images/work/work_flixer_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-transform: translateZ(0);
 }
 
 .flixer {
-	background-image: url(../images/work_flixer.jpg);
+	background-image: url(../images/work/work_flixer.jpg);
 }
 
 .realitiy_covered {
-	background-image: url(../images/work_realitiy_covered.jpg);
+	background-image: url(../images/work/work_realitiy_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-transform: translateZ(0);
 }
 
 .realitiy {
-	background-image: url(../images/work_realitiy.jpg);
+	background-image: url(../images/work/work_realitiy.jpg);
 }
 
 .infiniti_covered {
-	background-image: url(../images/work_infiniti_covered.jpg);
+	background-image: url(../images/work/work_infiniti_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-transform: translateZ(0);
 }
 
 .infiniti {
-	background-image: url(../images/work_infiniti.jpg);
+	background-image: url(../images/work/work_infiniti.jpg);
 }
 
 .wun_covered {
-	background-image: url(../images/work_wun_covered.jpg);
+	background-image: url(../images/work/work_wun_covered.jpg);
 	transition: 2s;
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-transform: translateZ(0);
 }
 
 .wun {
-	background-image: url(../images/work_wun.jpg);
+	background-image: url(../images/work/work_wun.jpg);
 }
 
 .work_preview_text {

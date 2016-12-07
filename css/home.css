@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url(../images/billboard_bg.jpg);
+    background: url(../images/home/billboard_bg.jpg);
     height: 700px;
     margin: 0;
     padding: 0;
@@ -83,7 +83,7 @@ body {
 }
 
 #billboard2 {
-    background: url(../images/billboard2_bg.jpg);
+    background: url(../images/home/billboard2_bg.jpg);
     height: 506px;
     margin-top: 150px;
 }

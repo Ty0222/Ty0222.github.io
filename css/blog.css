@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	background: url(../images/blog_bg.jpg) #000 no-repeat top center;
+	background: url(../images/blog/blog_bg.jpg) #000 no-repeat top center;
 	max-height: 2400px;
 	height: 100%;
 	margin: 0;
@@ -67,7 +67,7 @@ iframe {
 }
 
 #blog_link_bg {
-	background: url(../images/blog_visit_area_bg.jpg) repeat-x;
+	background: url(../images/blog/blog_visit_area_bg.jpg) repeat-x;
 	height: 168px;
 	margin: 45px auto;
 }
