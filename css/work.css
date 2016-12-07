@@ -227,7 +227,7 @@ body {
 
 	.project {
 		background-attachment: inherit;
-		background-position: 50%;
+		background-position: 50% 100%;
 	}
 
 	.work_preview_text {
@@ -262,17 +262,11 @@ body {
 	}
 }
 
-@media only screen and (max-width: 375px) {
-
-	.project {
-		background-position: 50% 80%;
-	}
-}
+@media only screen and (max-width: 375px) {}
 
 @media only screen and (max-width: 320px) {
 
 	.work_preview_text {
-		
 		font-size: 25px;
 	}
 }
