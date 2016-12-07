@@ -227,7 +227,7 @@ body {
 
 	.project {
 		background-attachment: scroll;
-		background-position: 50% 100%;
+		background-position: center;
 	}
 
 	.work_preview_text {
