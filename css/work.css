@@ -226,7 +226,9 @@ body {
 @media only screen and (max-width: 414px) {
 
 	.project {
-		background-attachment: fixed;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: center;
 	}
 
 	.work_preview_text {
