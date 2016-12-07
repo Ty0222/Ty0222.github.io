@@ -263,16 +263,12 @@ body {
 	}
 }
 
-@media only screen and (max-width: 375px) {
-
-	.work_preview_text {
-		top: 2px;
-	}
-}
+@media only screen and (max-width: 375px) {}
 
 @media only screen and (max-width: 320px) {
 
 	.work_preview_text {
+		top: 30px;
 		font-size: 25px;
 	}
 }
