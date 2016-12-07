@@ -227,11 +227,11 @@ body {
 
 	.project {
 		background-attachment: inherit;
-		background-position: 50% 43%;
+		background-position: 50%;
 	}
 
 	.work_preview_text {
-		opacity: 0;
+		opacity: 1;
 		top: 17px;
 		left: 10px;
 		height: 30px;

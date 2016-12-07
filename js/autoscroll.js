@@ -89,44 +89,6 @@ jQuery(document).ready(function($){
 
 	}
 
-	// 414px max-width window
-	if ( $(window).width() <= 414 )
-	{
-		// On scroll
-		$(window).bind("mousewheel DOMMouseScroll", function(e){
-
-			// Iterate through each text element
-			$(".work_preview_text").each(function(){
-
-				// When text is within view
-				if ( scrollingDown(e) && bottomOfObject(this) < bottomOfWindow() )
-				{
-					$(this).animate({"opacity":"1"}, 75);
-
-					// Set index to last when at bottom of page
-					if ( $(this).attr("id") == $(projects[projects.length-1]).children("a").attr("id") )
-					{
-						i = projects.length-1
-					}
-				}
-				
-				// When text is going out of view
-				if ( scrollingUp(e) && bottomOfObject(this) > topOfWindow() + 100 )
-				{
-					$(this).css("opacity", "0");
-				}
-
-				// Reset index when at top of page
-				if ( topOfWindow() < 130 )
-				{
-					i = 0;
-				}
-				
-			});
-
-		});
-	}
-
 	// Guiding arrow to help identify the number of projects left
 	// to scroll to
 	$(window).bind("mousewheel DOMMouseScroll", function(e){
