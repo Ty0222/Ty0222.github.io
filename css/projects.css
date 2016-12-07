@@ -20,7 +20,10 @@ html, body {
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
   -webkit-transform: translate3d(0, 0, 0);
-  webkit-animation-name: bg_zoom;
+}
+
+.project_body_animation {
+	webkit-animation-name: bg_zoom;
   webkit-animation-duration: 30s;
   webkit-animation-timing-function: linear;
   webkit-animation-fill-mode: forwards;
@@ -422,11 +425,6 @@ html, body {
 }
 
 @media only screen and (max-width: 414px) {
-
-	.project_body_bg {
-		webkit-animation-name: none;
-		animation-name: none;
-	}
 
 	#site_view_container {
 		max-width: 80px;

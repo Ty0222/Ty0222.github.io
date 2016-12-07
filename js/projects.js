@@ -106,7 +106,11 @@ jQuery(document).ready(function($) {
 			}
 
 		});
-
+		
+		if ( $window.width() <= 414 )
+		{
+			$(".project_body_bg").removeClass("project_body_animation");
+		}
 	}
 
 });
