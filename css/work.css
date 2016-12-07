@@ -226,6 +226,7 @@ body {
 @media only screen and (max-width: 414px) {
 
 	.project {
+		background-attachment: inherit;
 		background-position: 50% 43%;
 	}
 
