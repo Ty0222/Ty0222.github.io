@@ -175,10 +175,13 @@ jQuery(document).ready(function($){
 		});
 	}
 	
-	indirectToggleClass("blueprint_text", "blueprint_covered", "blueprint");
-	indirectToggleClass("flixer_text", "flixer_covered", "flixer");
-	indirectToggleClass("realitiy_text", "realitiy_covered", "realitiy");
-	indirectToggleClass("infiniti_text", "infiniti_covered", "infiniti");
-	indirectToggleClass("wun_text", "wun_covered", "wun");
+	if ( $(window).width() > 414 )
+	{
+		indirectToggleClass("blueprint_text", "blueprint_covered", "blueprint");
+		indirectToggleClass("flixer_text", "flixer_covered", "flixer");
+		indirectToggleClass("realitiy_text", "realitiy_covered", "realitiy");
+		indirectToggleClass("infiniti_text", "infiniti_covered", "infiniti");
+		indirectToggleClass("wun_text", "wun_covered", "wun");
+	}
 	
 });
