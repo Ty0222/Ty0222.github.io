@@ -1,0 +1,538 @@
+.clear {
+	clear: both;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.billboard-container {
+	width: 100%;
+}
+
+.billboard-photo {
+	z-index: -1;
+	background-image: url(../images/car/car-seats.jpg);
+	background-position: 50% 0;
+	background-repeat: repeat;
+	width: 100%;
+	height: 1000px;
+}
+
+.billboard-cover-default {
+	z-index: 0;
+	background-image: url(../images/car/billboard-cover-default.png);
+	background-position: 50%;
+	position: absolute;
+	left: -200px;
+	max-width: 1120px;
+	width: 100%;
+	height: 800px;
+}
+
+.billboard-banner-logo-container {
+	position: absolute;
+	max-width: 165px;
+	width: 100%;
+	top: 0;
+	left: 100px;
+}
+
+.billboard-banner {
+	z-index: 1;
+	position: relative;
+	max-width: 165px;
+	width: 100%;
+}
+
+.logo-container {
+	position: relative;
+	max-width: 120px;
+	width: 100%;
+	top: -160px;
+	margin: 0 auto;
+}
+
+.dodge-logo {
+	z-index: 2;
+	position: relative;
+	max-width: 120px;
+	width: 100%;
+}
+
+.billboard-content-container {
+	z-index: 2;
+	position: absolute;
+	width: 80%;
+	top: 245px;
+	left: 100px;
+}
+
+.billboard-content {
+	position: absolute;
+	padding-bottom: 7px;
+	border-bottom: 5px solid #FFD86E;
+	color: #FFF;
+}
+
+.bc-line1 {
+	font-size: 35px;
+	font-weight: 300;
+	top: 0;
+	left: 0;
+}
+
+.bc-line2 {
+	font-size: 40px;
+	font-weight: 700;
+	top: 160px;
+	left: 70px;
+}
+
+#bc-button {
+	box-sizing: border-box;
+	background: #000;
+	position: absolute;
+	max-width: 300px;
+	max-height: 60px;
+	width: 100%;
+	top: 55px;
+	right: 0;
+	border-radius: 50px;
+	color: #FFF;
+	text-align: left;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 1s;
+}
+
+#bc-button:hover {
+	color: #FFD86E;
+	transition: 1s;
+}
+
+/* styles for bc-button text */ #bc-button { 
+	display: inline-block;
+	padding: 7px 0;
+	padding-left: 40px;
+	font-size: 35px;
+	font-weight: 100;
+	color: #FFF;
+}
+
+.bc-arrow {
+  position: absolute;
+  height: 60px;
+  width: 50px;
+  top: 50%;
+  right: 40px;
+}
+
+.bc-arrow:before {
+  content: "";
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5%;
+  width: 50%;
+  -webkit-transform: skew(0deg, 25deg);
+  -moz-transform: skew(0deg, 25deg);
+  -ms-transform: skew(0deg, 25deg);
+  -o-transform: skew(0deg, 25deg);
+  transform: skew(0deg, 25deg);
+}
+
+.bc-arrow:after {
+  content: "";
+  background: #FFD86E;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 5%;
+  width: 50%;
+  -webkit-transform: skew(0deg, -25deg);
+  -moz-transform: skew(0deg, -25deg);
+  -ms-transform: skew(0deg, -25deg);
+  -o-transform: skew(0deg, -25deg);
+  transform: skew(0deg, -25deg);
+}​
+
+.sticky-header-container {
+	width: 100%;
+}
+
+.sticky-header {
+	z-index: 50;
+	background: rgba(0,0,0,.85);
+	position: relative;
+	max-width: 1600px;
+	width: 100%;
+	height: 100px;
+	margin-top: -100px;
+}
+
+.sh-nav-bg {
+	z-index: 51;
+	position: relative;
+	background: #000;
+	width: 75%;
+	height: 80px;
+	margin: auto;
+	top: 10px;
+}
+
+.nav-bar {
+	box-sizing: border-box;
+	position: relative;
+	max-width: 800px;
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav-bar li {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 100;
+	color: #FFF;
+	margin: 23px 0;
+	cursor: pointer;
+}
+
+.nav-animation:hover {
+	color: #FFD86E;
+}
+
+.nav-animation:hover {
+	webkit-animation-name: nav_hl;
+	webkit-animation-duration: .4s;
+	webkit-animation-timing-function: ease-in-out;
+	webkit-animation-fill-mode: forwards;
+	animation-name: nav_hl;
+	animation-duration: .4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes nav_hl {
+	0% {color: #FFD86E;}
+	25% {color: #FFF;}
+	50% {color: #FFD86E;}
+	75% {color: #FFF;}
+	100% {color: #FFD86E;}
+}
+
+@keyframes nav_hl {
+	0% {color: #FFD86E;}
+	25% {color: #FFF;}
+	50% {color: #FFD86E;}
+	75% {color: #FFF;}
+	100% {color: #FFD86E;}
+}
+
+#nav-left {
+	float: left;
+}
+
+#nav-right {
+	float: right;
+}
+
+.btf-container {
+	position: absolute;
+	width: 100%;
+	top: 100px;
+}
+
+.carbon-fiber-bg {
+	z-index: -1;
+	background: url(../images/car/carbon-fiber-bg.jpg);
+	position: relative;
+	max-width: 1600px;
+	width: 100%;
+	height: 2650px;
+}
+
+.main-content-header {
+	background: rgba(0,0,0,.85);
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+
+.mc-header-text {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header-story {
+	max-width: 195px;
+}
+
+.header-exterior {
+	max-width: 330px;
+}
+
+.header-interior {
+	max-width: 315px;
+}
+
+.mc-header-text span {
+	display: inline-block;
+	padding-bottom: 7px;
+	border-bottom: 5px solid #FFD86E;
+	font-size: 45px;
+	color: #FFF;
+	text-align: center;
+	margin: 24px auto 0;
+}
+
+.main-content-body {
+	background: rgba(0,0,0,.85);
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.main-content-body p {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	font-size: 18px;
+	line-height: 2;
+	text-align: center;
+	color: #FFF;
+}
+
+.btn {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	background: #FFF;
+	padding: 15px 0;
+	color: #000;
+	width: 240px;
+	text-align: center;
+}
+
+.car-gallery-container {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.car-gallery {
+	position: relative;
+	max-width: 315px;
+	width: 100%;
+	height: 215px;
+	cursor: pointer;
+}
+
+.car-gallery-container-mobile {
+	display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1280px) {}
+
+@media only screen and (max-width: 1024px) {
+
+	.carbon-fiber-bg {
+		height: 3750px;
+	}
+
+	.car-gallery-container {
+		display: none;
+	}
+
+	.car-gallery-container-mobile {
+		display: block;
+		max-width: 635px;
+		width: 100%;
+	}
+
+	.bc-line2 {
+		left: 10px;
+	}
+
+	#bc-button {
+		right: -75px;
+	}
+}
+
+@media only screen and (max-width: 980px) {}
+
+@media only screen and (max-width: 800px) {
+
+	.billboard-photo {
+		height: 875px;
+	}
+
+	.billboard-banner-logo-container {
+		left: 15px;
+	}
+
+	.billboard-content-container {
+		position: relative;
+		max-width: 300px;
+		width: 100%;
+		top: 160px;
+		left: auto;
+		margin: 0 auto;
+		border: none;
+	}
+
+	.billboard-content {
+		position: relative;
+		margin: 0 auto 75px;
+		top: auto;
+		left: auto;
+		text-align: center;
+	}
+
+	.bc-line1 {
+		max-width: 220px;
+		width: 100%;
+		font-size: 30px;
+	}
+
+	.bc-line2 {
+		max-width: 200px;
+		width: 100%;
+		font-size: 35px;
+		margin-bottom: 150px;
+	}
+
+	#bc-button {
+		position: relative;
+		margin: 0 auto;
+		top: auto;
+		right: auto;
+	}
+
+	.carbon-fiber-bg {
+		height: 4000px;
+	}
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {
+
+	.billboard-photo {
+		height: 800px;
+	}
+
+	.carbon-fiber-bg {
+		height: 6650px;
+	}
+
+	.billboard-content-container {
+		top: 225px;
+	}
+
+	.nav-bar {
+		padding: 0 2px;
+	}
+
+	.nav-bar li {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: 100;
+		color: #FFF;
+		margin: 27px 0;
+		cursor: pointer;
+	}
+
+	.car-gallery-container-mobile {
+		max-width: 316px;
+	}
+
+	.sticky-header-container {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+	.carbon-fiber-bg {
+		height: 6850px;
+	}
+}
+
+@media only screen and (max-width: 414px) {}
+
+@media only screen and (max-width: 375px) {
+
+	.billboard-photo {
+		height: 750px;
+	}
+
+	.carbon-fiber-bg {
+		height: 7150px;
+	}
+
+	.bc-line2 {
+		max-width: 200px;
+		width: 100%;
+		font-size: 35px;
+		margin-bottom: 100px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+
+	.carbon-fiber-bg {
+		height: 7250px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.billboard-content-container {
+		top: 210px;
+	}
+
+	.bc-line1 {
+		max-width: 180px;
+		width: 100%;
+		font-size: 25px;
+	}
+
+	.bc-line2 {
+		font-size: 30px;
+		margin-bottom: 90px;
+	}
+
+	.carbon-fiber-bg {
+		height: 7600px;
+	}
+
+	.mc-header-text span {
+		font-size: 40px;
+	}
+
+	.header-story {
+		max-width: 175px;
+	}
+
+	.header-exterior {
+		max-width: 295px;
+	}
+
+	.header-interior {
+		max-width: 280px;
+	}
+}
