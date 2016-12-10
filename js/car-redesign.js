@@ -29,7 +29,19 @@ jQuery(document).ready(function($){
 
 		if ( e.target.id == "bc-button" || e.target.id == "nav-left" )
 		{
-			$("html, body").animate({ scrollTop: topOfObject(".carbon-fiber-bg") }, 800);
+
+			// Scroll to the top of The Story section
+			if ( $(window).width() <= 480 )
+			{
+				$("html, body").animate({ scrollTop: topOfObject(".header-story") }, 800);
+			}
+
+			// Scroll to the carbon fiber bg just above The Story section
+			// This is to make room for the nav menu
+			else
+			{
+				$("html, body").animate({ scrollTop: topOfObject(".carbon-fiber-bg") }, 800);
+			}
 		}
 
 		if ( e.target.id == "nav-middle" )
