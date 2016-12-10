@@ -39,23 +39,23 @@ jQuery(document).ready(function($){
 	{
 
 		// On scroll
-		$(window).bind("mousewheel DOMMouseScroll", function(e){
+		$(window).bind("mousewheel DOMMouseScroll keydown mousedown", function(e){
 
 			// Scrolling up & not at top of document
-	    if ( projects[i-1] && scrollingUp(e) )
+	    if ( projects[i-1] && ( scrollingUp(e) || e.keyCode == "38" ) )
 	    {
 	    	i--;
 
-	    	if ( bowser.name == "Safari" )
-	    	{
-	    		// Hide all project titles
-		    	$(".work_preview_text").each(function(){
-		    		$(this).css("opacity","0");
-		    	});
+	    	if ( bowser.name == "Safari" || ( bowser.name != "Safari" && e.keyCode == "38" ) )
+    		{	
+    			// Autoscroll to next project
+    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+    		}
 
-	    		// Autoscroll to next project
-	    		$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
-	    	}
+	    	// Hide all project titles
+	    	$(".work_preview_text").each(function(){
+	    		$(this).css("opacity","0");
+	    	});
 
 	    	// Fade in project title text
 	    	$(projects[i]).children(".work_preview_text").animate({"opacity":"1"}, 1600);
@@ -63,21 +63,21 @@ jQuery(document).ready(function($){
 	    // Scrolling down & not at bottom of document
 	    else
 	    {
-	    	if ( projects[i+1] )
+	    	if ( projects[i+1] && ( scrollingDown(e) || e.keyCode == "40" || e.type == "mousedown" ) )
 	    	{
 
 	    		i++;
 
-	    		if ( bowser.name == "Safari" )
-	    		{
-	    			// Hide all project titles
-		    		$(".work_preview_text").each(function(){
-		    			$(this).css("opacity","0");
-		    		});
-		    		
+	    		if ( bowser.name == "Safari" || ( bowser.name != "Safari" && e.keyCode == "40" || e.type == "mousedown" ) )
+	    		{	
 	    			// Autoscroll to next project
 	    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
 	    		}
+
+	    		// Hide all project titles
+	    		$(".work_preview_text").each(function(){
+	    			$(this).css("opacity","0");
+	    		});
 
 	    		// Fade in project title text
 	    		$(projects[i]).children(".work_preview_text").animate({"opacity":"1"}, 1600);
