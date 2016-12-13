@@ -58,7 +58,7 @@ jQuery(document).ready(function($){
 	    	});
 
 	    	// Fade in project title text
-	    	$(projects[i]).children(".work_preview_text").animate({"opacity":"1"}, 1600);
+	    	$(projects[i]).children(".work_preview_text_container").children(".work_preview_text").animate({"opacity":"1"}, 1600);
 	    }
 	    // Scrolling down & not at bottom of document
 	    else
@@ -80,7 +80,7 @@ jQuery(document).ready(function($){
 	    		});
 
 	    		// Fade in project title text
-	    		$(projects[i]).children(".work_preview_text").animate({"opacity":"1"}, 1600);
+	    		$(projects[i]).children(".work_preview_text_container").children(".work_preview_text").animate({"opacity":"1"}, 1600);
 	    	}
 
 	    }
@@ -118,7 +118,7 @@ jQuery(document).ready(function($){
     }
 	});
 	
-	//toggles toggle_class's bg image for target_class when hovering over hover_class
+	// Toggles toggle_class's bg image for target_class when hovering over hover_class
 	function indirectToggleClass(hover_class, target_class, toggle_class){
 		const ORIGINAL_BG = $("." + target_class).css("background-image");
 
@@ -136,8 +136,9 @@ jQuery(document).ready(function($){
 			});
 		});
 	}
-	
-	if ( $(window).width() > 414 )
+
+	// Project background transforms when hovering over text for name of project
+	if ( $(window).width() > 480 )
 	{
 		indirectToggleClass("blueprint_text", "blueprint_covered", "blueprint");
 		indirectToggleClass("flixer_text", "flixer_covered", "flixer");
