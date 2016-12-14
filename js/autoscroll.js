@@ -34,56 +34,60 @@ jQuery(document).ready(function($){
 	var projects = [".prg1", ".prg2", ".prg3", ".prg4", ".prg5"];
 	var i = 0;
 
-	// 1024px min-width window
+	// 768px min-width window
 	if ( $(window).width() >= 768 )
 	{
 
 		// On scroll
 		$(window).bind("mousewheel DOMMouseScroll keydown mousedown", function(e){
 
-			// Scrolling up & not at top of document
-	    if ( projects[i-1] && ( scrollingUp(e) || e.keyCode == "38" ) )
-	    {
-	    	i--;
+			if ( e.target.id != "mobile_nav" && $("#nav").css("display") == "none" )
+			{
 
-	    	if ( bowser.name == "Safari" || ( bowser.name != "Safari" && e.keyCode == "38" ) )
-    		{	
-    			// Autoscroll to next project
-    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
-    		}
+				// Scrolling up & not at top of document
+		    if ( projects[i-1] && ( scrollingUp(e) || e.keyCode == "38" ) )
+		    {
+		    	i--;
 
-	    	// Hide all project titles
-	    	$(".work_preview_text").each(function(){
-	    		$(this).css("opacity","0");
-	    	});
-
-	    	// Fade in project title text
-	    	$(projects[i]).children(".work_preview_text_container").children(".work_preview_text").animate({"opacity":"1"}, 1600);
-	    }
-	    // Scrolling down & not at bottom of document
-	    else
-	    {
-	    	if ( projects[i+1] && ( scrollingDown(e) || e.keyCode == "40" || e.type == "mousedown" ) )
-	    	{
-
-	    		i++;
-
-	    		if ( bowser.name == "Safari" || ( bowser.name != "Safari" && e.keyCode == "40" || e.type == "mousedown" ) )
+		    	if ( bowser.name == "Safari" || ( bowser.name != "Safari" && e.keyCode == "38" ) )
 	    		{	
 	    			// Autoscroll to next project
 	    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+
+		    		// Hide all project titles
+			    	$(".work_preview_text").each(function(){
+			    		$(this).css("opacity","0");
+			    	});
 	    		}
 
-	    		// Hide all project titles
-	    		$(".work_preview_text").each(function(){
-	    			$(this).css("opacity","0");
-	    		});
+		    	// Fade in project title text
+		    	$(projects[i]).children(".work_preview_text_container").children(".work_preview_text").animate({"opacity":"1"}, 1600);
+		    }
+		    // Scrolling down & not at bottom of document
+		    else
+		    {
+		    	if ( projects[i+1] && ( scrollingDown(e) || e.keyCode == "40" || e.type == "mousedown" ) )
+		    	{
 
-	    		// Fade in project title text
-	    		$(projects[i]).children(".work_preview_text_container").children(".work_preview_text").animate({"opacity":"1"}, 1600);
-	    	}
+		    		i++;
 
-	    }
+		    		if ( bowser.name == "Safari" || ( bowser.name != "Safari" && e.keyCode == "40" || e.type == "mousedown" ) )
+		    		{	
+		    			// Autoscroll to next project
+		    			$("html, body").animate({ scrollTop: $(projects[i]).offset().top }, 800);
+
+			    		// Hide all project titles
+			    		$(".work_preview_text").each(function(){
+			    			$(this).css("opacity","0");
+			    		});
+		    		}
+
+		    		// Fade in project title text
+		    		$(projects[i]).children(".work_preview_text_container").children(".work_preview_text").animate({"opacity":"1"}, 1600);
+		    	}
+
+		    }
+		  }
 
 		});
 
@@ -118,33 +122,40 @@ jQuery(document).ready(function($){
     }
 	});
 	
-	// Toggles toggle_class's bg image for target_class when hovering over hover_class
-	function indirectToggleClass(hover_class, target_class, toggle_class){
+	// When hovering over hover_class toggle_class's bg image is displayed replacing target_class
+	// and also changes color for preview_text
+	function indirectToggleClass(hover_class, target_class, toggle_class, preview_text){
 		const ORIGINAL_BG = $("." + target_class).css("background-image");
 
-		$("." + hover_class).on("mouseenter", function(){
+		$("." + hover_class + ", " + "." + preview_text).on("mouseenter", function(){
+
 			$("." + target_class).css({
 				"background-image": $("." + toggle_class).css("background-image"),
 				"-webkit-transform": "scale(1.01)"
 			});
+
+			$("." + preview_text).addClass(preview_text + "_text_hover");
 		});
 
-		$("." + hover_class).on("mouseout", function(){
+		$("." + hover_class).on("mouseleave", function(){
+
 			$("." + target_class).css({
 				"background-image": ORIGINAL_BG,
 				"-webkit-transform": "scale(1)"
 			});
+
+			$("." + preview_text).removeClass(preview_text + "_text_hover");
 		});
 	}
 
-	// Project background transforms when hovering over text for name of project
-	if ( $(window).width() > 480 )
+	// 480px min-width window
+	if ( $(window).width() >= 480 )
 	{
-		indirectToggleClass("blueprint_text", "blueprint_covered", "blueprint");
-		indirectToggleClass("flixer_text", "flixer_covered", "flixer");
-		indirectToggleClass("realitiy_text", "realitiy_covered", "realitiy");
-		indirectToggleClass("infiniti_text", "infiniti_covered", "infiniti");
-		indirectToggleClass("wun_text", "wun_covered", "wun");
+		indirectToggleClass("work_preview_text_container", "blueprint_covered", "blueprint_highlighted", "blueprint");
+		indirectToggleClass("work_preview_text_container", "flixer_covered", "flixer_highlighted", "flixer");
+		indirectToggleClass("work_preview_text_container", "realitiy_covered", "realitiy_highlighted", "realitiy");
+		indirectToggleClass("work_preview_text_container", "infiniti_covered", "infiniti_highlighted", "infiniti");
+		indirectToggleClass("work_preview_text_container", "wun_covered", "wun_highlighted", "wun");
 	}
 	
 });
