@@ -164,7 +164,7 @@ body {
 @-webkit-keyframes point_down {
 	0% {bottom: 2px}
 	25% {bottom: 6px}
-	50% {bottom: 10px;}
+	50% {bottom: 10px}
 	75% {bottom: 6px}
 	100% {bottom: 2px}
 }
@@ -172,7 +172,7 @@ body {
 @keyframes point_down {
 	0% {bottom: 2px}
 	25% {bottom: 6px}
-	50% {bottom: 10px;}
+	50% {bottom: 10px}
 	75% {bottom: 6px}
 	100% {bottom: 2px}
 }
