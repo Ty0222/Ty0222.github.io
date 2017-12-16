@@ -83,26 +83,6 @@
           </p>
         </div>
         <img src="images/projects/project_blueprint_analysis2.png" class="analysis_photo_big profile_photo">
-
-        <div id="task-manager-csamp" class="analysis_content_title">
-          <p>The Task Manager</p>
-        </div>
-        <div class="analysis_content">
-          <p>
-            This use case for our task manager involves presenting a user's most important task at the moment. I opted to create and use a service object named <span class="code_highlight code_poro">PresentTask</span> to be responsible for this job. A key part here is the existence of the <span class="code_highlight code_method">next_major_task</span> method, which always returns the nearest major task that has yet to be completed. It does this using the <span class="code_highlight code_method">inject</span> method on our queried collection of uncompleted major milestones comparing each's due date attribute (including our goal object passed in as an argument) until it finds the closest one to today's date. As can be seen below, all of our use cases contain a similar interface (i.e. <span class="code_highlight code_method">perform</span> method) for easy identification via our <span class="code_highlight code_module">UseCase</span> module.
-          </p>
-        </div>
-        <img src="images/projects/project_blueprint_csample1.png" class="code_sample csamp_first csamp_margin_lg">
-        <img src="images/projects/project_blueprint_csample2.png" class="code_sample">
-
-        <div class="analysis_content content_without_title">
-          <p>
-            Our task manager also tracks the time it takes to complete a given task. Based upon the type of task (major vs miniature), the manager can terminate users' progress towards their goals. To handle this responsibility I created a policy object named <span class="code_highlight code_poro">TerminateProgressPolicy</span> that determines the conditions upon which a task is to be terminated. With the use of duck typing, our policy object functions agnostically when dealing with either a goal or milestone.
-          </p>
-        </div>
-
-        <img src="images/projects/project_blueprint_csample3.png" class="code_sample csamp_first csamp_margin_sm">
-        <img src="images/projects/project_blueprint_csample4.png" class="code_sample">
     
         <div class="analysis_content_title">
           <p>Assisting the User</p>
@@ -113,25 +93,6 @@
           </p>
         </div>
         <img src="images/projects/project_blueprint_analysis3.png" class="analysis_photo_big user_form_photo">
-
-        <div class="analysis_content_title">
-          <p>Ordering Blueprints</p>
-        </div>
-        <div class="analysis_content">
-          <p>
-            This use case deals with intelligently presetting users' due dates according to their proper place within a blueprint. This context object (used alongside a specific class/type of object) named <span class="code_highlight code_poro">AutoSelectDueDate</span> involves two states: a predetermined default date and an adjusted version for when users are near an upcoming major task. This eases the decison making for users by allowing them to simply focus on their plan of attack.
-          </p>
-        </div>
-        <img src="images/projects/project_blueprint_csample5.png" class="code_sample csamp_first csamp_margin_sm">
-        <img src="images/projects/project_blueprint_csample6.png" class="code_sample">
-        <img src="images/projects/project_blueprint_csample7.png" class="code_sample">
-
-        <div class="analysis_content content_without_title">
-          <p>
-            Provided the conventional Rails' options for validations, many of our app's features would unfortunately be rendered useless. For instance, having current tasks with due dates that surpass the start date of certain future ones make it impossible for our task manager system to accurately detect where a user is along a given track. To solve this problem I created custom validations for the due date attribute that would allow for the integrity of our app's data and feature set to be upheld.
-          </p>
-        </div>
-        <img src="images/projects/project_blueprint_csample8.png" class="code_sample csamp_first csamp_margin_sm">
 
         <div class="analysis_content_title">
           <p>Staying Consistent</p>
@@ -152,7 +113,7 @@
           </p>
         </div>
         <img src="images/projects/project_blueprint_csample9.png" class="code_sample csamp_first csamp_margin_med">
-        <img src="images/projects/project_blueprint_csample10.png" class="code_sample">
+        
         <div class="analysis_content content_without_title">
           <p>
             To mimic the text feedback feature, I combined JavaScript and Regex. First, I removed the "fakepath" path name provided by the original button when users choose a file and stored the remaining path in the <span class="code_highlight code_variable">filename</span> variable. I then captured a truncated version of <span class="code_highlight code_variable">filename</span> that mimics the format of the original text feedback feature. Afterwards, I captured the appropriate filename extension that will later be appended to our <span class="code_highlight code_variable">truncated_filename</span> variable. Finally, I replaced the default text for the new button with our truncated filename giving users the same helpful functionality they're used to.
