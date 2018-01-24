@@ -1,18 +1,41 @@
 html {
-    background: #FFF;
+    background: #000;
 }
 
 body {
-    background: url(../images/home/billboard_bg.jpg);
-    height: 700px;
+    background: #111111;
     margin: 0;
     padding: 0;
+}
+
+#billboard {
+    position: absolute;
+    background: url(../images/home/billboard_bg.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+#billboard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: #000000;
+    opacity: .75;
+    width: 100%;
+    height: 100%;
+}
+
+#billboard .container {
+    z-index: 99;
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    margin: 100px auto;
 }
 
 #billboard_photo_frame {
     position: relative;
     top: 80px;
-    left: 128px;
     max-width: 460px;
     width: 100%;
 }
@@ -20,12 +43,14 @@ body {
 #billboard_skills {
     position: absolute;
     top: 35px;
-    right: 125px;
-    max-width: 460px;
+    right: 0;
+    max-width: 500px;
     width: 100%;
+    text-align: center;
 }
 
 .box_container {
+    position: relative;
     max-width: 460;
     width: 100%;
     margin: 0 auto;
@@ -44,7 +69,7 @@ body {
 .billboard_boxes {
     display: inline-block;
     position: relative;
-    max-width: 105px;
+    max-width: 125px;
     width: 100%;
     height: 40px;
     margin: 10px 0 0 5px;
@@ -53,7 +78,7 @@ body {
 }
 
 .billboard_boxes:hover {
-    opacity: .88;
+    opacity: .68;
     -webkit-transition:.4s;
     -moz-transition:.4s;
     -o-transition:.4s;
@@ -63,8 +88,8 @@ body {
 
 .billboard_boxes p {
     position: relative;
-    top: 13px;
-    bottom: 13px;
+    height: 40px;
+    line-height: 40px;
     font-family: Arial, Sans-serif;
     text-align: center;
     color: #FFF;
@@ -80,12 +105,6 @@ body {
 #billboard_concepts {
     max-width: 460px;
     width: 100%;
-}
-
-#billboard2 {
-    background: url(../images/home/billboard2_bg.jpg);
-    height: 506px;
-    margin-top: 150px;
 }
 
 #contact_me {
@@ -163,9 +182,15 @@ body {
 }
 
 #contact_links {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 200px;
     max-width: 330px;
     width: 100%;
-    margin: -75px 0 0 150px;
+
 }
 
 #contact_links li {
@@ -184,30 +209,6 @@ body {
 
 #contact_links li img {
     margin-left: -5px;
-}
-
-#mobile_device_contact_links {
-    display: none;
-    width: 230px;
-    margin: 5px 0 32px 81px;
-}
-
-#mobile_device_contact_links li {
-    float: left;
-    background: #555555;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    border-radius: 150px;
-}
-
-#mobile_device_contact_links li img {
-    margin-left: -1px;
-    margin-top: -1px;
-}
-
-#mobile_device_contact_links li:hover {
-    background: #FFF;
 }
 
 ::-webkit-input-placeholder {
@@ -235,40 +236,45 @@ body {
     
     #billboard .container {
         max-width: 460px;
+        width: 100%;
     }
 
     #billboard_skills {
         position: static;
-        margin-top: 200px;
-    }
-    
-    #billboard2 .container {
-        max-width: 293px;
-    }
-    
-    #contact_me {
-        display: none;
-    }
-    
-    #contact_form_bg {
-        margin: 40px auto 0;
+        margin-top: 150px;
     }
     
     #contact_links {
-        display: none;
-    }
-    
-    #mobile_device_contact_links {
-        display: block;
+        top: 50px;
     }
 }
 
 @media only screen and (max-width: 600px) {
 
+    #billboard_photo_frame {
+        top: 40px;
+    }
+
     #billboard_skills {
-        max-width: 230px;
+        margin-top: 100px;   
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #contact_links {
+        top: 20px;
+        left: 10px;
+    }
+
+    #contact_links li {
+        width: 35px;
+        height: 35px;
+    }
+
+    #contact_links li img {
+        width: 32px;
+        height: 32px;
+        margin: auto;
     }
 }
 

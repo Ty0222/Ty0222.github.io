@@ -13,12 +13,32 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div id="included_header_file"></div>
+    <div id="header">
+      <div class="mobile_nav_button" id="mobile_nav"></div>
+        <div id="nav">
+          <a href="index.html" id="site_header_name">Tyquan E. Kelly</a>
+          <img src="images/layout/site_header_ruby.png" id="site_header_ruby">
+          <a href="index.html" class="nav_tabs">
+            Home
+          </a>
+          <a href="work.html" class="nav_tabs">
+            Work
+          </a>
+          <a href="blog.html" class="nav_tabs">
+            Blog
+          </a>
+          <a href="car-redesign.html" class="nav_tabs">
+            Dodge Redesign
+          </a>
+            <div id="close_btn">Close</div>
+        </div>
+    </div>
     <!-- HEADER -->
+    
     <!-- BILLBOARD -->
     <div id="billboard">
       <div class="container">
-        <img src="images/home/billboard_photo_lg.png" id="billboard_photo_frame">
+        <img src="images/home/billboard_photo_me.png" id="billboard_photo_frame">
         <div id="billboard_skills">
           <div class="box_container">
             <div class="billboard_box_title">Technologies</div>
@@ -54,46 +74,12 @@
             <span class="billboard_boxes"><p>DOM</p></span>
             <span class="billboard_boxes"><p>Wireframes</p></span>
             <span class="billboard_boxes"><p>Prototyping</p></span>
-            <span class="billboard_boxes">
-              <p style="font-size:14px">Graphic Design</p>
-            </span>
+            <span class="billboard_boxes"><p>Design</p></span>
             <span class="billboard_boxes"><p>Agile</p></span>
           </div>
         </div>
-        <div class="clear"></div>
       </div>
-    </div>
-    <div id="billboard2">
-      <div class="container">
-        <img src="images/home/billboard2_contact_me.png" id="contact_me">
-        <div id="contact_form_bg">
-          <div id="mobile_device_contact_links">
-            <ul>
-              <li><a href="https://github.com/ty0222"><img src="images/home/billboard2_contact_github_sm.png"></a></li>
-              <li><a href="https://www.facebook.com/TyKelly.Dev"><img src="images/home/billboard2_contact_fb_sm.png"></a></li>
-              <li><a href="https://twitter.com/ADevNamedTy"><img src="images/home/billboard2_contact_twitter_sm.png"></a></li>
-              <li><a href="https://www.linkedin.com/in/kellyty"><img src="images/home/billboard2_contact_linkedin_sm.png"></a></li>
-            </ul>
-          </div>
-          <div id="contact_form_header">
-            I would be happy to answer any questions you may have.
-          </div>
-          <form enctype="multipart/form-data" method="" action="" accept-charset="UTF-8" id="contact_form">
-            <div>
-              <input type="hidden" name="acctid" id="acctid" value="n617r132u97flbz5" />
-              <input type="hidden" name="formid" id="formid" value="1293598" />
-              <input type="hidden" name="required_vars" id="required_vars" value="name,email" />
-            </div>
-            <input class="text_field" type="text" name="name" id="name" placeholder="Name:">
-            <input class="text_field" type="email" name="email" id="email" placeholder="Email:">
-            <textarea name="field-d304646f09115ec" id="field-d304646f09115ec" class="text_area" placeholder="Message: (extend this area with tag in lower right corner)"></textarea>
-            <input id="btn_submit" type="submit" value="SUBMIT" >
-          </form>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <div class="container" 
-        <div id="contact_links">
+      <div id="contact_links">
           <ul>
             <li><a href="https://github.com/ty0222"><img src="images/home/billboard2_contact_github_med.png"></a></li>
             <li><a href="https://www.facebook.com/TyKelly.Dev"><img src="images/home/billboard2_contact_fb_med.png"></a></li>
@@ -102,13 +88,18 @@
           </ul>
         </div>
       </div>
-      <div class="clear"></div>
     </div>
     <!-- BILLBOARD -->
+
     <!-- FOOTER -->
-    <div id="included_footer_file">Tyquan Kelly</div>
+    <div id="footer">
+      <div class="container">
+        <div id="sig">Developed & Designed By Tyquan E. Kelly</div>
+        <img id="footer_logo" src="images/layout/adnt_logo.png">
+      </div>
+    </div>
     <!-- FOOTER -->
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="js/header_footer.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>
