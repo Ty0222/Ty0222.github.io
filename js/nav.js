@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 		// Hides nav menu and displays nav button.
 		if ( e.target.id == "close_btn" || e.target.id != "nav" )
 		{
-			if ( $("#nav").css("width") == "250px" )
+			if ( $("#nav").css("width") > "0px" )
 			{
 				$("#nav").animate({
 					"width":"0"
