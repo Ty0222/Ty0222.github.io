@@ -118,8 +118,9 @@ a {
 
 #footer {
     z-index: 999;
-    background: url(../images/layout/site_footer_bg.jpg) repeat-x bottom;
-    height: 78px;
+    background: #FFFFFF;
+    width: 100%;
+    height: 80px;
 }
 
 #sig {
