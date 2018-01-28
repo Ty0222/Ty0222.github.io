@@ -1,4 +1,5 @@
 html {
+	background: #000;
 	height: 100%;
 }
 
@@ -8,12 +9,20 @@ body {
 
 .project {
 	position: relative;
-	background-attachment: fixed;
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: 50%;
 	width: 100%;
 	height: 100%;
+}
+
+.project__title {
+	z-index: 999;
+	position: fixed;
+	top: 20px;
+	left: 15px;
+	color: #3B8BD2;
+	font-size: 35px;
 }
 
 .blueprint_covered {
@@ -71,7 +80,7 @@ body {
 	background-image: url(../images/work/work_wun.jpg);
 }
 
-.work_preview_text_container {
+.work_preview_container {
 	display: block;
 	position: relative;
 	max-width: 925px;
@@ -80,46 +89,6 @@ body {
 	margin: auto;
 	top: 50%;
 	transform: translateY(-50%);
-}
-
-.work_preview_text {
-	opacity: 0;
-	z-index: 99;
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-	font-family: Verdana, Arial, Sans-serif;
-	font-size: 50px;
-	color: #DDD;
-	transition: 2s;
-}
-
-.blueprint {
-	opacity: 1;
-}
-
-.blueprint_text_hover {
-	color: rgb(0,89,178);
-}
-
-.flixer_text_hover {
-	color: rgb(255,191,0);
-}
-
-.realitiy {
-	color: #000;
-}
-
-.realitiy_text_hover {
-	color: rgb(96,215,0);
-}
-
-.infiniti_text_hover {
-	color: rgb(155,155,140);
-}
-
-.wun_text_hover {
-	color: rgb(69,159,170);
 }
 
 .arrow_container {
@@ -193,39 +162,7 @@ body {
 
 @media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 480px) {
-
-	.work_preview_text {
-		opacity: 1;
-		top: 45px;
-		left: 10px;
-		height: 30px;
-		width: 275px;
-		margin-right: 0;
-		font-size: 32px;
-	}
-
-	.blueprint {
-		opacity: 1;
-		color: rgb(0,89,178);
-	}
-
-	.flixer {
-		color: rgb(255,191,0);
-	}
-
-	.realitiy {
-		color: rgb(96,215,0);
-	}
-
-	.infiniti {
-		color: rgb(155,155,140);
-	}
-
-	.wun {
-		color: rgb(69,159,170);
-	}
-}
+@media only screen and (max-width: 480px) {}
 
 @media only screen and (max-width: 425px) {}
 
@@ -235,9 +172,4 @@ body {
 
 @media only screen and (max-width: 360px) {}
 
-@media only screen and (max-width: 320px) {
-
-	.work_preview_text {
-		font-size: 25px;
-	}
-}
+@media only screen and (max-width: 320px) {}
