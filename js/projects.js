@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
 
-	var $window = $(window);
-	var $site_view_slctr = $("#site_view");
+	var $site_view = $("#site_view");
 	var $site_view_text = $("a #site_view p");
 	var $site_view_link = $("a #site_view");
 
@@ -28,13 +27,13 @@ jQuery(document).ready(function($) {
 		/* Sticks site view button to top of window and fixes to window as user scrolls past button. Returns button to original position once passed in opposite direction. */ 
 
 		//while scrolling page
-		$window.bind("mousewheel DOMMouseScroll", function(){
+		$(window).bind("mousewheel DOMMouseScroll", function(){
 			
 			//Top of window passes below site_view selector
-			if ( $window.scrollTop() > SITE_VIEW_POS )
+			if ( $(window).scrollTop() > SITE_VIEW_POS )
 			{
 				//stick site_view to top of window & add transparent color to bg 
-				$site_view_slctr.css({
+				$site_view.css({
 					"z-index": "97",
 					"position": "fixed",
 					"margin-top": "0",
@@ -55,9 +54,9 @@ jQuery(document).ready(function($) {
 
 			}
 			//Top of window passes above site_view return to default css
-			else if ( $window.scrollTop() < SITE_VIEW_POS && $site_view_slctr.css("position") == "fixed" )
+			else if ( $(window).scrollTop() < SITE_VIEW_POS && $site_view.css("position") == "fixed" )
 			{
-				$site_view_slctr.css({
+				$site_view.css({
 					"position": "absolute",
 					"background-color": "",
 					"margin-left": "auto",
@@ -80,10 +79,10 @@ jQuery(document).ready(function($) {
 			/* Fixes content to window while user scrolls between the 2nd and 3rd analysis background. */
 
 			//only infiniti & wun project pages & 800px min-width window
-			if ( $window.width() >= 800 && ( pageIs(/infiniti/) || pageIs(/wun/) ) )
+			if ( $(window).width() >= 800 && ( pageIs(/infiniti/) || pageIs(/wun/) ) )
 			{
 				//scrolling from analysis2 area to analysis3 area
-				if ( $window.scrollTop() > topOfObject("#analysis2") && $window.scrollTop() + 240 + 
+				if ( $(window).scrollTop() > topOfObject("#analysis2") && $(window).scrollTop() + 240 + 
 					$(".analysis_content_sideview p").outerHeight() + $(".analysis_content_title_sideview p").outerHeight() < topOfObject("#analysis3") )
 				{
 					//fix position of content to window 
@@ -107,7 +106,7 @@ jQuery(document).ready(function($) {
 
 		});
 		
-		if ( $window.width() <= 414 )
+		if ( $(window).width() <= 414 )
 		{
 			$(".project_body_bg").removeClass("project_body_animation");
 		}

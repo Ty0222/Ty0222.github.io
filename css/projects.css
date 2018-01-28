@@ -19,33 +19,14 @@ html, body {
 	-moz-filter: blur(2px);
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
-  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: scale(1.3);
 }
 
-.project_body_animation {
-	webkit-animation-name: bg_zoom;
-  webkit-animation-duration: 30s;
-  webkit-animation-timing-function: linear;
-  webkit-animation-fill-mode: forwards;
-  animation-name: bg_zoom;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes bg_zoom {
-	0% {-webkit-transform: scale(1);}
-	100% {-webkit-transform: scale(1.3);}
-}
-
-@keyframes bg_zoom {
-	0% {-webkit-transform: scale(1);}
-	100% {-webkit-transform: scale(1.3);}
-}
+.project_body_animation {}
 
 .black_trans_bg {
 	position: relative;
-	background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,.5);
 	color: #FFF;
 }
 
