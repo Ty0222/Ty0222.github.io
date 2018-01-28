@@ -8,23 +8,6 @@
 	height: 100%;
 }
 
-.svbg_clr { 
-	display: none;
-	background-color: rgba(69,159,170, 0.4);
-}
-
-#site_view_container {
-	max-width: 115px;
-}
-
-#site_view {
-	max-width: 115px;
-}
-
-a:hover #site_view {
-	background-color: #459FAA;
-}
-
 #wireframe_title p {
 	color: #FFF;
 }
