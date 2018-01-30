@@ -17,11 +17,13 @@ body, html {
 
 #site_header_name {
     z-index: 1001;
-    position: fixed;
+    position: absolute;
     top: 10px;
-    right: 36px;
+    left: 0;
+    right: 0;
     font-size: 27px;
     color: #FFF;
+    text-align: center;
 }
 
 #site_header_ruby {
