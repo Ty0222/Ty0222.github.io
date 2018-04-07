@@ -1,5 +1,6 @@
 html {
     background: #000;
+    height: 100%;
 }
 
 body {
@@ -11,8 +12,9 @@ body {
 #billboard {
     position: absolute;
     background: url(../images/home/billboard_bg.jpg);
+    background-size: cover;
     width: 100%;
-    height: 110%;
+    height: 100%;
 }
 
 #billboard::after {
@@ -188,7 +190,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 200px;
+    bottom: 25px;
     max-width: 330px;
     width: 100%;
 
