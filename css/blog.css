@@ -1,11 +1,16 @@
-
+#footer {
+	position: absolute;
+   bottom: 0;
+}
 
 html {
 	background: #FFF;
+	height: 100%;
 }
 
 body {
 	background: url(../images/blog/blog_bg.jpg) #000 no-repeat top center;
+	background-size: cover;
 	max-height: 2400px;
 	height: 100%;
 	margin: 0;
